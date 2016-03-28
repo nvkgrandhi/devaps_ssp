@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block content %}
+    <div class="topcorner">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/accounts/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p> Welcome {{ user }} </p>
+            <div class="btn-group btn-group-lg">
+                <a href="/accounts/create_user/" class="btn btn-primary">Create User</a>
+                <a href="/accounts/list_users/" class="btn btn-primary">List All Users</a>
+                <a href="/accounts/list_users/" class="btn btn-primary">Delete User</a>
+                <a href="/accounts/update_user/" class="btn btn-primary">Update User</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    .topcorner{
+        position:absolute;
+        top:3px;
+        right: 10px;
+     }
+    </style>
+{% endblock %}

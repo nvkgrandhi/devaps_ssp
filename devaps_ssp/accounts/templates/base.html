@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    {% load bootstrap3 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+        <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+        <title>Welcome to S-S-P</title>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">S-S-P</a>
+                </div>
+
+                <ul class="nav navbar-nav">
+                    <!--<li class="active"><a href="/home/">Home</a></li>-->
+                    <li class="active"><a href="#">AboutMe</a></li>
+                    <li class="active"><a href="#">ContactUs</a></li>
+                </ul>
+                <!--<ul class="nav navbar-nav navbar-right">-->
+                    <!--<li><a href="/">Logout</a></li>-->
+                <!--</ul>-->
+            </div>
+         </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    </body>
+</html>

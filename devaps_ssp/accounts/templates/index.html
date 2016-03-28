@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block content %}
+    <div class="topcorner">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/accounts/login_page/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+
+    <style>
+    .topcorner{
+        position:absolute;
+        top:3px;
+        right: 10px;
+     }
+    </style>
+{% endblock %}
