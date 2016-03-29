@@ -17,16 +17,34 @@
                 <a href="/accounts/create_user/" class="btn btn-primary">Create User</a>
                 <a href="/accounts/list_users/" class="btn btn-primary">List All Users</a>
                 <a href="/accounts/list_users/" class="btn btn-primary">Delete User</a>
-                <a href="/accounts/update_user/" class="btn btn-primary">Update User</a>
+                <a href="/accounts/update/" class="btn btn-primary">Edit User</a>
             </div>
         </div>
     </div>
+    <pre></pre>
+        <div class="container">
+            <button type="button" class="btn btn-default btn-lg" id="myBtn">Create Work Flow</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <a href="/accounts/accounts_home/" class="btn btn-primary">Return to Home Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script>
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#myModal").modal();
+        });
+    });
+    </script>
 
     <style>
-    .topcorner{
-        position:absolute;
-        top:3px;
-        right: 10px;
-     }
+        .topcorner{
+            position:absolute;
+            top:3px;
+            right: 10px;
+         }
     </style>
 {% endblock %}

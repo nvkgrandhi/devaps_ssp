@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block content %}
+    <div class="topcorner">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/accounts/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
+    <h2>Users Edit | You can only edit user Role</h2>
+    <div class="container">
+        <table class="table table-bordered" id="css-serial">
+            <thead>
+                <tr>
+                    <th>Sl.No</th>
+                    <th>User Name</th>
+                    <th>Role</th>
+                    <th>Edit Role</th>
+                </tr>
+                {% for user in object_list %}
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>{{user.user.username}}</td>
+                    <td>{{user.role}}</td>
+                    <td>
+                        <form method="post" action="/accounts/update_user/{{user.user_id}}">{% csrf_token %}
+                            <select class="form-control" id="role" name="role" title="Select User Role">
+                                <option value=""></option>
+                                <option>Developer</option>
+                                <option>QA</option>
+                            </select>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </thead>
+        </table>
+        <a href="/accounts/accounts_home/" class="btn btn-primary">Return to Home Page</a>
+    </div>
+
+    <style>
+        #css-serial {
+            counter-reset: serial-number; /* Set the serial number counter to 0 */
+        }
+        #css-serial td:first-child:before {
+            counter-increment: serial-number; /* Increment the serial number counter */
+            content: counter(serial-number); /* Display the counter */
+        }
+
+        .topcorner{
+            position:absolute;
+            top:3px;
+            right: 10px;
+        }
+
+    </style>
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block content %}
+    <div class="topcorner">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/accounts/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <table class="table table-bordered" id="css-serial">
+            <thead>
+                <tr>
+                    <th>Sl.No</th>
+                    <th>User Name</th>
+                    <th>Edit User</th>
+                    <th>Delete User</th>
+                </tr>
+                {% for user in object_list %}
+                <tr>
+                    <!--<td>{{user.id}}</td>-->
+                    <td>&nbsp;</td>
+                    <td>{{user.username}}</td>
+                    <td><a href="/accounts/update_user/{{user.id}}">Edit User</a></td></td>
+                    <td><a href="/accounts/delete_user/{{user.id}}">Delete User</a></td>
+
+                </tr>
+                    <!--<input type="checkbox" name="checkbox" id="checkbox_id">{{ user.username }}-->
+
+                {% endfor %}
+                <!--<div class="btn-group btn-group-sm">-->
+                    <!--<a href="/delete_user/?{{user.id}}" class="btn btn-primary">Delete User</a>-->
+                <!--</div>-->
+            </thead>
+        </table>
+        <a href="/accounts/accounts_home/" class="btn btn-primary">Return to Home Page</a>
+    </div>
+
+    <style>
+        #css-serial {
+            counter-reset: serial-number; /* Set the serial number counter to 0 */
+        }
+        #css-serial td:first-child:before {
+            counter-increment: serial-number; /* Increment the serial number counter */
+            content: counter(serial-number); /* Display the counter */
+        }
+
+        .topcorner{
+            position:absolute;
+            top:3px;
+            right: 10px;
+        }
+
+    </style>
+{% endblock %}
