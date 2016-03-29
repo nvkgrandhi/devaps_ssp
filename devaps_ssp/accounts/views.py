@@ -20,7 +20,6 @@ def login_page(request):
 
 
 def login(request):
-    # import pdb; pdb.set_trace()
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -66,7 +65,6 @@ def create_user(request):
 
 
 def register(request):
-    # import pdb; pdb.set_trace();
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():
@@ -98,21 +96,18 @@ def register(request):
 
 
 def list_users(request):
-    # import pdb; pdb.set_trace();
     auth_user = User.objects.all()
     data = {'object_list': auth_user}
     return render(request, 'list_users.html', data)
 
 
 def update(request):
-    # import pdb; pdb.set_trace();
     auth_user = UserProfile.objects.all()
     data = {'object_list': auth_user}
     return render(request, 'update_user.html', data)
 
 
 def update_user(request, user_id):
-    # import pdb; pdb.set_trace()
     if request.method == 'POST':
         auth_user = UserProfile.objects.get(user_id=user_id)
         auth_user.role = request.POST.get('role')
@@ -128,7 +123,6 @@ def delete(request):
 
 
 def delete_user(request, user_id):
-    # import pdb; pdb.set_trace()
     auth_user = User.objects.get(pk=user_id)
     auth_user.delete()
     auth_user = User.objects.all()
@@ -138,4 +132,3 @@ def delete_user(request, user_id):
 
 def user_view(request):
     return render(request, 'user.html')
-
