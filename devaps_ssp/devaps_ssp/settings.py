@@ -126,3 +126,45 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '[%(asctime)s] %(levelname)s %(module)s %(process)d %(thread)d [%(name)s:%(lineno)s] %(message)s',
+            # 'datefmt' : "%d/%b/%Y %H:%M:%S"
+        }
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+            },
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'accounts_log.log'),
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        # 'django': {
+        #     'handlers': ['file'],
+        #     'level': 'DEBUG',
+        #     'propagate': True,
+        # },
+        'accounts':{
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            # 'propagate': True,
+
+        }
+    }
+}
+
+# if DEBUG:
+#     # make all loggers use the console.
+#     for logger in LOGGING['loggers']:
+#         LOGGING['loggers'][logger]['handlers'] = ['console']

@@ -3,8 +3,7 @@
 {% load bootstrap3 %}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
-    <!--<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">-->
-    <!--<meta http-equiv="cache-control" content="no-cache">-->
+
 {% block content %}
     <div class="topcorner">
         <ul class="nav navbar-nav navbar-right">
@@ -102,6 +101,22 @@
 
     .form-bottom form .input-error {
         border-color: #4aaf51;
+    }
+    button.btn {
+        height: 30px;
+        margin: 0;
+        padding: 0 20px;
+        vertical-align: middle;
+        background: #4aaf51;
+        border: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+        color: #fff;
+    }
+    button.btn:hover {
+        opacity: 0.6; color: #fff;
     }
     </style>
 {% endblock %}
