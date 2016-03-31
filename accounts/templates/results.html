@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block content %}
+    <div class="topcorner">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/accounts/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
+    {% if info.message %}
+        {{info.message}}
+    <!--{% elif info.message_i %}-->
+        <!--{{info.message_i}}-->
+    <!--{% elif info.message_ii %}-->
+        <!--{{info.message_ii}}-->
+    <!--{% elif info.message_iii %}-->
+        <!--{{info.message_iii}}-->
+    <!--{% elif info.message_iv %}-->
+        <!--{{info.message_iv}}-->
+    <!--{% elif info.message_v %}}-->
+        <!--{{info.message_v}}-->
+    <!--{% elif info.data %}-->
+        <!--{{info.data}}-->
+    <!--{% elif info.message_vi %}-->
+        <!--{{info.message_vi}}-->
+    <!--{% else info.message_vii %}-->
+        <!--{{info.message_vii}}-->
+    {% endif %}
+    <a href="/accounts/accounts_home/" class="btn btn-primary">Return to Home Page</a>
+    <style>
+        .topcorner {
+            position:absolute;
+            top:3px;
+            right: 10px;
+         }
+    </style>
+{% endblock %}

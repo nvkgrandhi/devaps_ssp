@@ -1,5 +1,10 @@
 import os
+import sys
+import time
+import select
+import paramiko
 import logging
+
 
 from django.contrib.auth.models import User
 from django.shortcuts import render
@@ -160,4 +165,85 @@ def create_file(request):
         return HttpResponse('File has been created successfully')
     else:
         return HttpResponse('Something went wrong! not able to create file')
+
+
+def execute_jenkins(request):
+    import pdb; pdb.set_trace();
+
+    m_dict = {}
+    if request.method == 'POST':
+        vcs = request.POST.get('vcs')
+        crt = request.POST.get('cr')
+        buildt = request.POST.get('bd')
+        host = '10.76.205.223'
+        i = 1
+
+        if vcs == 'Git' and crt == 'Gerrit' and buildt == 'Jenkins':
+            # print ('Porperly Selected the Tools')
+            message = "Selected Tools are {} | {} | {}. Selected Tools are ready to Run".format(vcs, crt, buildt)
+            m_dict['message'] = message
+            while True:
+                # print ('Trying to connect to %s (%i/10)' %(host, i))
+                message_i = "Trying to connect to %s (%i/2)" %(host, i)
+                m_dict['message_i'] = message_i
+
+                try:
+                    ssh = paramiko.SSHClient()
+                    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+                    ssh.connect(host, username='root', password='123456')
+                    message_ii = 'Connected to %s' %host
+                    m_dict['message_ii'] = message_ii
+                    # print ('Connected to %s' % host)
+                    break
+                except paramiko.AuthenticationException:
+                    message_iii = "Authentication failed when connecting to %s" % host
+                    m_dict['message_iii'] = message_iii
+                    # print ("Authentication failed when connecting to %s" % host)
+                    sys.exit(1)
+
+                except:
+                    message_iv = "Could not SSH to %s, waiting for it to start" % host
+                    m_dict['message_iv'] = message_iv
+                    # print ("Could not SSH to %s, waiting for it to start" % host)
+                    i += 1
+                    time.sleep(2)
+
+                # If we could not connect within time limit
+                if i == 2:
+                    message_v = "Could not connect to %s. Giving up" % host
+                    m_dict['message_v'] = message_v
+                    # print ("Could not connect to %s. Giving up" % host)
+                    sys.exit(1)
+
+            # Send the command (non-blocking)
+            stdin, stdout, stderr = ssh.exec_command("java -jar /home/victor/jenkins-cli.jar -s http://10.76.205.223:8080/ build 'warproj1' -c")
+
+            # Wait for the command to terminate
+            while not stdout.channel.exit_status_ready():
+                # Only print data if there is data to read in the channel
+                if stdout.channel.recv_ready():
+                    rl, wl, xl = select.select([stdout.channel], [], [], 0.0)
+                    if len(rl) > 0:
+                        # Print data from stdout
+                        # print (stdout.channel.recv(1024)),
+                        data = stdout.channel.recv(1024)
+                        m_dict['data'] = data
+
+            # Disconnect from the host
+            message_vi = "Command has been executed on Jenkins Build Server"
+            m_dict['message_vi'] = message_vi
+            # print ("Command has been executed on Jenkins Build Server")
+            ssh.close()
+        else:
+            # print ("Please select Proper Tools")
+            message_vii = "Please Select These Tools only Git | Girrit | Jenkins, \
+                          Tools that are selected are not configured {} | {} | {} ".format(vcs, crt, buildt)
+            m_dict['message_vii'] = message_vii
+            sys.exit(1)
+
+    return render(request, 'results.html', {'info': m_dict})
+
+
+
+
 

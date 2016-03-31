@@ -15,4 +15,5 @@ urlpatterns = [
     url(r'^update_user/(?P<user_id>\d+)$', views.update_user, name='update_user'),
     url(r'^user_view/', views.user_view, name='user_view'),
     url(r'^create_file/', views.create_file, name='create_file'),
+    url(r'^execute_jenkins/', views.execute_jenkins, name='execute_jenkins'),
 ]
