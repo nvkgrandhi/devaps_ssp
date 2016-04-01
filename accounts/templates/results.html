@@ -10,25 +10,15 @@
             <li><a href="/accounts/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         </ul>
     </div>
-    {% if info.message %}
-        {{info.message}}
-    <!--{% elif info.message_i %}-->
-        <!--{{info.message_i}}-->
-    <!--{% elif info.message_ii %}-->
-        <!--{{info.message_ii}}-->
-    <!--{% elif info.message_iii %}-->
-        <!--{{info.message_iii}}-->
-    <!--{% elif info.message_iv %}-->
-        <!--{{info.message_iv}}-->
-    <!--{% elif info.message_v %}}-->
-        <!--{{info.message_v}}-->
-    <!--{% elif info.data %}-->
-        <!--{{info.data}}-->
-    <!--{% elif info.message_vi %}-->
-        <!--{{info.message_vi}}-->
-    <!--{% else info.message_vii %}-->
-        <!--{{info.message_vii}}-->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{message}}<br />
+            </div>
+        {% endfor %}
     {% endif %}
+    <a href="http://10.76.205.223:8080/plugin/global-build-stats/showChart?buildStatId=5HFxdj*PJ9D*qo9yFtfaklm!fTTqWd1@"
+       alt="chart" height="500" width="600" class="btn btn-primary">Click here to view the Build Status Graph</a>
     <a href="/accounts/accounts_home/" class="btn btn-primary">Return to Home Page</a>
     <style>
         .topcorner {

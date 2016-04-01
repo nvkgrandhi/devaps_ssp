@@ -5,7 +5,7 @@ import select
 import paramiko
 import logging
 
-
+from django.contrib import messages
 from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -160,6 +160,7 @@ def user_view(request):
 
 
 def create_file(request):
+    logger.info('Function to create script')
     if request.method == 'POST':
         file = open(os.path.join(BASE_DIR, 'scripts/script.py'), 'w')
         return HttpResponse('File has been created successfully')
@@ -168,9 +169,7 @@ def create_file(request):
 
 
 def execute_jenkins(request):
-    import pdb; pdb.set_trace();
-
-    m_dict = {}
+    logger.info('Function to execute script')
     if request.method == 'POST':
         vcs = request.POST.get('vcs')
         crt = request.POST.get('cr')
@@ -179,40 +178,59 @@ def execute_jenkins(request):
         i = 1
 
         if vcs == 'Git' and crt == 'Gerrit' and buildt == 'Jenkins':
-            # print ('Porperly Selected the Tools')
+            print ('Porperly Selected the Tools')
             message = "Selected Tools are {} | {} | {}. Selected Tools are ready to Run".format(vcs, crt, buildt)
-            m_dict['message'] = message
+            if message is not None:
+                messages.info(request, message)
+            else:
+                messages.error(request, 'Error')
+
             while True:
-                # print ('Trying to connect to %s (%i/10)' %(host, i))
-                message_i = "Trying to connect to %s (%i/2)" %(host, i)
-                m_dict['message_i'] = message_i
+                print ('Trying to connect to %s (%i/10)' %(host, i))
+                message_i = "Trying to connect to %s (%i/10)" %(host, i)
+                if message_i is not None:
+                    messages.info(request, message_i)
+                else:
+                    messages.error(request, 'Error')
 
                 try:
                     ssh = paramiko.SSHClient()
                     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
                     ssh.connect(host, username='root', password='123456')
                     message_ii = 'Connected to %s' %host
-                    m_dict['message_ii'] = message_ii
-                    # print ('Connected to %s' % host)
+                    if message_ii is not None:
+                        messages.info(request, message_ii)
+                    else:
+                        messages.error(request, 'Error')
+
+                    print ('Connected to %s' % host)
                     break
                 except paramiko.AuthenticationException:
-                    message_iii = "Authentication failed when connecting to %s" % host
-                    m_dict['message_iii'] = message_iii
-                    # print ("Authentication failed when connecting to %s" % host)
+                    message_ii = "Authentication failed when connecting to %s" % host
+                    if message_ii is not None:
+                        messages.info(request, message_ii)
+                    else:
+                        messages.error(request, 'Error')
+                    print ("Authentication failed when connecting to %s" % host)
                     sys.exit(1)
-
                 except:
-                    message_iv = "Could not SSH to %s, waiting for it to start" % host
-                    m_dict['message_iv'] = message_iv
-                    # print ("Could not SSH to %s, waiting for it to start" % host)
+                    message_ii = "Could not SSH to %s, waiting for it to start" % host
+                    if message_ii is not None:
+                        messages.info(request, message_ii)
+                    else:
+                        messages.error(request, 'Error')
+                    print ("Could not SSH to %s, waiting for it to start" % host)
                     i += 1
                     time.sleep(2)
 
                 # If we could not connect within time limit
-                if i == 2:
-                    message_v = "Could not connect to %s. Giving up" % host
-                    m_dict['message_v'] = message_v
-                    # print ("Could not connect to %s. Giving up" % host)
+                if i == 10:
+                    message_i = "Could not connect to %s. Giving up" % host
+                    if message_i is not None:
+                        messages.info(request, message_i)
+                    else:
+                        messages.error(request, 'Error')
+                    print ("Could not connect to %s. Giving up" % host)
                     sys.exit(1)
 
             # Send the command (non-blocking)
@@ -225,23 +243,32 @@ def execute_jenkins(request):
                     rl, wl, xl = select.select([stdout.channel], [], [], 0.0)
                     if len(rl) > 0:
                         # Print data from stdout
-                        # print (stdout.channel.recv(1024)),
                         data = stdout.channel.recv(1024)
-                        m_dict['data'] = data
+                        if data is not None:
+                            messages.info(request, data)
+                        else:
+                            messages.error(request, 'Error')
+                        print (stdout.channel.recv(1024)),
 
             # Disconnect from the host
             message_vi = "Command has been executed on Jenkins Build Server"
-            m_dict['message_vi'] = message_vi
-            # print ("Command has been executed on Jenkins Build Server")
+            if message_vi is not None:
+                messages.info(request, message_vi)
+            else:
+                messages.error(request, 'Error')
+            print ("Command has been executed on Jenkins Build Server")
             ssh.close()
         else:
-            # print ("Please select Proper Tools")
-            message_vii = "Please Select These Tools only Git | Girrit | Jenkins, \
-                          Tools that are selected are not configured {} | {} | {} ".format(vcs, crt, buildt)
-            m_dict['message_vii'] = message_vii
-            sys.exit(1)
+            print ("Please select Proper Tools")
+            message = '....Oops select tools are not configurable {} | {} | {}  - - - ' \
+                      'Please select Git | Gerrit | Jenkins Only'.format(vcs, crt, buildt)
+            if message is not None:
+                messages.info(request, message)
+            else:
+                messages.error(request, 'Error')
+            # sys.exit(1)
 
-    return render(request, 'results.html', {'info': m_dict})
+    return render(request, 'results.html')
 
 
 

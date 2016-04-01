@@ -43,3 +43,40 @@
         right: 10px;
      }
     </style>
+
+
+    {% if info.message %}
+        {{info.message}}
+    {% elif info.message_i %}
+        {{info.message_i}}
+    {% elif info.message_ii %}
+        {{info.message_ii}}
+    {% elif info.message_iii %}
+        {{info.message_iii}}
+    {% elif info.message_iv %}
+        {{info.message_iv}}
+    {% elif info.message_v %}}
+        {{info.message_v}}
+    {% elif info.data %}
+        {{info.data}}
+    {% elif info.message_vi %}
+        {{info.message_vi}}
+    {% else info.message_vii %}
+        {{info.message_vii}}
+    {% endif %}
+
+
+
+
+{% for ms in info %}-->
+        <!--{{ms.message}}-->
+        <!--{{ms.message_i}}-->
+        <!--{{ms.message_ii}}-->
+        <!--{{ms.message_v}}-->
+        <!--{{ms.data}}-->
+    <!--{% endfor %}
+
+
+<!--{% for message in messages %}-->
+        <!--{{message}}<br />-->
+    <!--{% endfor %}-->
