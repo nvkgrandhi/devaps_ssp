@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block content %}
+    <div class="topcorner">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/accounts/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p> Welcome {{ user }} </p>
+            <div class="btn-group btn-group-lg">
+                <a href="/accounts/create_user/" class="btn btn-primary">Create User</a>
+                <a href="/accounts/list_users/" class="btn btn-primary">List All Users</a>
+                <a href="/accounts/list_users/" class="btn btn-primary">Delete User</a>
+                <a href="/accounts/update/" class="btn btn-primary">Edit User</a>
+            </div>
+        </div>
+    </div>
+    <pre></pre>
+        <div class="container">
+            <button type="button" class="btn btn-default btn-lg" id="myBtn">Create Pipe Line</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <h4 id="id_h4">SELECT BELOW TOLLS TO START BUILD PROCESS</h4>
+                        <!--<form name='input' action="/accounts/create_file/" method="post">{% csrf_token %}-->
+                        <form name='input' action="/accounts/execute_jenkins/" method="post">{% csrf_token %}
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Verson Control Tools</th>
+                                    <th>Code Review Tools</th>
+                                    <th>Build Tools</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <select class="form-control" id="id_tool" name="vcs" title="Select Tool">
+                                            <option value=""></option>
+                                            <option>Git</option>
+                                            <option>SVN</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="form-control" id="id_tool1" name="cr" title="Select Tool">
+                                            <option value=""></option>
+                                            <option>Gerrit</option>
+                                            <option>.....</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="form-control" id="id_tool2" name="bd" title="Select Tool">
+                                            <option value=""></option>
+                                            <option>Jenkins</option>
+                                            <option>Travisci</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="script-button">
+
+                                <button onclick="myFunction()" type="submit" class="btn btn-primary"
+                                        id="script-button">BUILD</button>
+                                <a href="/accounts/accounts_home/" class="btn btn-primary">Return to Home Page</a>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script>
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#myModal").modal();
+        });
+    });
+
+    function myFunction() {
+        document.getElementById("script-button").style.color = "red";
+    }
+    </script>
+
+    <style>
+        .topcorner {
+            position:absolute;
+            top:3px;
+            right: 10px;
+         }
+
+        #id_h4 {
+            position:absolute;
+            top:150px;
+            margin-left:90px;
+            color: greenyellow;
+        }
+        table {
+            position:absolute;
+            top:200px;
+        }
+        th {
+            background-color: #4CAF50;
+            /*color: white;*/
+            text-align: center;
+        }
+        .script-button {
+            position:absolute;
+            top:300px;
+        }
+    </style>
+{% endblock %}

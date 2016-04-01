@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block content %}
+    <div class="topcorner">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/accounts/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>User Created Successfully</h1>
+            <h4>If you want to create one more user</h4>
+            <a href="/accounts/create_user/" class="btn btn-primary">Create User</a>
+            <a href="/accounts/accounts_home/" class="btn btn-primary">Return to Home Page</a>
+        </div>
+    </div>
+
+    <style>
+        .topcorner{
+            position:absolute;
+            top:3px;
+            right: 10px;
+         }
+    </style>
+{% endblock %}
