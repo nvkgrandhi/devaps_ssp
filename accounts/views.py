@@ -1,20 +1,19 @@
+import logging
 import os
+import select
 import sys
 import time
-import select
-import paramiko
-import logging
 
+import paramiko
 from django.contrib import messages
 from django.contrib.auth.models import User
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
 
 from .forms import LoginForm, RegistrationForm
 from .models import UserProfile
-
-
 from devaps_ssp.settings import BASE_DIR
+
 # Create your views here.
 
 logger = logging.getLogger(__name__)
@@ -234,7 +233,8 @@ def execute_jenkins(request):
                     sys.exit(1)
 
             # Send the command (non-blocking)
-            stdin, stdout, stderr = ssh.exec_command("java -jar /home/victor/jenkins-cli.jar -s http://10.76.205.223:8080/ build 'warproj1' -c")
+            stdin, stdout, stderr = ssh.exec_command("java -jar /home/victor/jenkins-cli.jar -s http://10.76.205.223:8080/ build 'warproj1' -s")
+            # stdin, stdout, stderr = ssh.exec_command("java -jar /home/victor/jenkins-cli.jar -s http://10.76.205.223:8080/ build 'warproj1' -s")
 
             # Wait for the command to terminate
             while not stdout.channel.exit_status_ready():
@@ -269,6 +269,18 @@ def execute_jenkins(request):
             # sys.exit(1)
 
     return render(request, 'results.html')
+
+
+def auth_git(request):
+    logger.info("Calling auth_git function to authenticate github account")
+    import pdb; pdb.set_trace();
+
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        pass
+
+    return HttpResponse('Authenticated')
 
 
 
