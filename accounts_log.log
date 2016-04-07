@@ -703,3 +703,66 @@ Calling Home Page Function
 [2016-04-06 12:32:56,712] INFO views 5012 4396 [accounts.views:28] Calling Admin Page Function
 [2016-04-06 12:33:06,806] INFO views 5012 5060 [accounts.views:275] Calling auth_git function to authenticate github account
 [2016-04-06 12:33:19,613] INFO views 5012 3020 [accounts.views:28] Calling Admin Page Function
+[2016-04-06 14:10:57,355] INFO views 512 5680 [accounts.views:24] Calling Home Page Function
+[2016-04-06 14:11:00,663] INFO views 512 5988 [accounts.views:34] Calling Login Page Function
+[2016-04-06 14:11:06,997] INFO views 512 6756 [accounts.views:39] Calling login Function
+[2016-04-06 14:11:19,978] INFO views 512 6636 [accounts.views:276] Calling auth_git function to authenticate github account
+[2016-04-06 14:11:57,767] INFO views 512 5616 [accounts.views:39] Calling login Function
+[2016-04-06 14:12:00,151] INFO views 512 4264 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:12:44,315] INFO views 6076 7128 [accounts.views:276] Calling auth_git function to authenticate github account
+[2016-04-06 14:12:53,810] INFO views 6076 5432 [accounts.views:24] Calling Home Page Function
+[2016-04-06 14:13:34,029] INFO views 6076 5576 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:14:18,702] INFO views 6768 1868 [accounts.views:276] Calling auth_git function to authenticate github account
+[2016-04-06 14:14:29,849] INFO views 6768 7056 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:19:53,841] INFO views 6768 2772 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:19:58,352] INFO views 6768 6600 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:20:28,580] INFO views 6768 7020 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:20:31,111] INFO views 6768 3924 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:22:18,489] INFO views 6768 6332 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:22:21,745] INFO views 6768 4572 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:22:46,363] INFO views 6768 5100 [accounts.views:24] Calling Home Page Function
+[2016-04-06 14:22:48,302] INFO views 6768 7152 [accounts.views:34] Calling Login Page Function
+[2016-04-06 14:22:57,490] INFO views 6768 2772 [accounts.views:39] Calling login Function
+[2016-04-06 14:23:50,433] INFO views 6768 4188 [accounts.views:24] Calling Home Page Function
+[2016-04-06 14:23:52,373] INFO views 6768 1792 [accounts.views:34] Calling Login Page Function
+[2016-04-06 14:24:59,498] INFO views 6768 5984 [accounts.views:39] Calling login Function
+[2016-04-06 14:25:35,187] INFO views 6768 5452 [accounts.views:39] Calling login Function
+[2016-04-06 14:25:36,889] INFO views 6768 7108 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:26:58,479] INFO views 6768 4300 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:27:58,968] INFO views 4376 6192 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:28:09,871] INFO views 4376 1100 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:28:56,438] INFO views 4376 6192 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:36:03,208] INFO views 4480 4676 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:36:06,167] INFO views 4480 6712 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:37:20,887] INFO views 4480 5352 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:38:38,256] INFO views 4480 4588 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:40:20,406] INFO views 4480 3800 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:40:50,433] INFO views 4480 4792 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:41:10,981] INFO views 4480 6700 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:41:31,917] INFO views 4480 5732 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:42:06,162] INFO views 4480 7112 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:42:36,824] INFO views 4480 6356 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:42:55,431] INFO views 4480 856 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:43:18,746] INFO views 4480 6404 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:44:04,004] INFO views 4480 4432 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:44:23,971] INFO views 4480 4368 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:45:03,936] INFO views 4480 6912 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:45:16,620] INFO views 4480 5828 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:45:48,081] INFO views 4480 2696 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:46:06,460] INFO views 4480 5136 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:46:18,895] INFO views 4480 6416 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:47:00,317] INFO views 4480 5668 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:47:14,819] INFO views 4480 5156 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:47:27,075] INFO views 4480 1704 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:47:54,775] INFO views 4480 4396 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:48:20,437] INFO views 4480 3828 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:48:43,994] INFO views 4480 6944 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:50:11,024] INFO views 4480 5664 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:50:15,059] INFO views 4480 4476 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:50:25,427] INFO views 4480 4532 [accounts.views:172] Function to execute script
+[2016-04-06 14:50:33,970] INFO views 4480 5116 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:50:44,934] INFO views 4480 5524 [accounts.views:172] Function to execute script
+[2016-04-06 14:51:13,113] INFO views 4480 5040 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:51:15,543] INFO views 4480 7032 [accounts.views:29] Calling Admin Page Function
+[2016-04-06 14:51:23,695] INFO views 4480 3828 [accounts.views:172] Function to execute script
+[2016-04-06 14:53:01,627] INFO views 4480 5432 [accounts.views:29] Calling Admin Page Function

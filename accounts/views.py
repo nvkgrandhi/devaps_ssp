@@ -5,6 +5,7 @@ import sys
 import time
 
 import paramiko
+import requests
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.http import HttpResponse
@@ -177,7 +178,7 @@ def execute_jenkins(request):
         i = 1
 
         if vcs == 'Git' and crt == 'Gerrit' and buildt == 'Jenkins':
-            print ('Porperly Selected the Tools')
+            print('Porperly Selected the Tools')
             message = "Selected Tools are {} | {} | {}. Selected Tools are ready to Run".format(vcs, crt, buildt)
             if message is not None:
                 messages.info(request, message)
@@ -185,7 +186,7 @@ def execute_jenkins(request):
                 messages.error(request, 'Error')
 
             while True:
-                print ('Trying to connect to %s (%i/10)' %(host, i))
+                print('Trying to connect to %s (%i/10)' %(host, i))
                 message_i = "Trying to connect to %s (%i/10)" %(host, i)
                 if message_i is not None:
                     messages.info(request, message_i)
@@ -202,7 +203,7 @@ def execute_jenkins(request):
                     else:
                         messages.error(request, 'Error')
 
-                    print ('Connected to %s' % host)
+                    print('Connected to %s' % host)
                     break
                 except paramiko.AuthenticationException:
                     message_ii = "Authentication failed when connecting to %s" % host
@@ -210,7 +211,7 @@ def execute_jenkins(request):
                         messages.info(request, message_ii)
                     else:
                         messages.error(request, 'Error')
-                    print ("Authentication failed when connecting to %s" % host)
+                    print("Authentication failed when connecting to %s" % host)
                     sys.exit(1)
                 except:
                     message_ii = "Could not SSH to %s, waiting for it to start" % host
@@ -218,7 +219,7 @@ def execute_jenkins(request):
                         messages.info(request, message_ii)
                     else:
                         messages.error(request, 'Error')
-                    print ("Could not SSH to %s, waiting for it to start" % host)
+                    print("Could not SSH to %s, waiting for it to start" % host)
                     i += 1
                     time.sleep(2)
 
@@ -229,7 +230,7 @@ def execute_jenkins(request):
                         messages.info(request, message_i)
                     else:
                         messages.error(request, 'Error')
-                    print ("Could not connect to %s. Giving up" % host)
+                    print("Could not connect to %s. Giving up" % host)
                     sys.exit(1)
 
             # Send the command (non-blocking)
@@ -248,7 +249,7 @@ def execute_jenkins(request):
                             messages.info(request, data)
                         else:
                             messages.error(request, 'Error')
-                        print (stdout.channel.recv(1024)),
+                        print(stdout.channel.recv(1024)),
 
             # Disconnect from the host
             message_vi = "Command has been executed on Jenkins Build Server"
@@ -256,10 +257,10 @@ def execute_jenkins(request):
                 messages.info(request, message_vi)
             else:
                 messages.error(request, 'Error')
-            print ("Command has been executed on Jenkins Build Server")
+            print("Command has been executed on Jenkins Build Server")
             ssh.close()
         else:
-            print ("Please select Proper Tools")
+            print("Please select Proper Tools")
             message = '....Oops select tools are not configurable {} | {} | {}  - - - ' \
                       'Please select Git | Gerrit | Jenkins Only'.format(vcs, crt, buildt)
             if message is not None:
@@ -278,9 +279,13 @@ def auth_git(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
-        pass
 
-    return HttpResponse('Authenticated')
+        r = requests.get('https://api.github.com', auth=(username, password))
+
+        print(r.status_code)
+        print(r.headers['content-type'])
+
+    return HttpResponse(r.status_code)
 
 
 

@@ -45,7 +45,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            <select class="form-control" id="idtool" name="cr" title="Select Tool">
+                            <select class="form-control" id="idtool" name="cr" title="Select Tool" >
                                 <option value=""></option>
                                 <option>Gerrit</option>
                                 <option>.....</option>
@@ -54,14 +54,14 @@
                         <td>
                             <select class="form-control" id="idtool1" name="vcs" title="Select Tool">
                                 <option value=""></option>
-                                <option class="id_opt">Git</option>
+                                <option onclick="myFunction()">Git</option>
                                 <option>SVN</option>
                             </select>
                         </td>
                         <td>
                             <select class="form-control" id="idtool2" name="bd" title="Select Tool">
                                 <option value=""></option>
-                                <option>Jenkins</option>
+                                <option onclick="myFunction1()">Jenkins</option>
                                 <option>Travisci</option>
                             </select>
                         </td>
@@ -69,49 +69,11 @@
                 </tbody>
             </table>
             <div class="script-button">
-                    <button onclick="myFunction()" type="submit" class="btn btn-primary"
+                    <button onclick="myFunction3()" type="submit" class="btn btn-primary"
                             id="script-button">BUILD</button>
                     <a href="/accounts/accounts_home/" class="btn btn-primary">Return to Home Page</a>
             </div>
             </form>
-        </div>
-    </div>
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="inner-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 form-box" id="id_col">
-                        <div class="form-top">
-                            <div class="form-top-left">
-                                <h3 style="text-align: center;">Authentication is Required</h3>
-                                <p style="text-align: center;">Enter your username and password to Authenticate</p>
-                            </div>
-                            <div class="form-top-right">
-                                <i class="fa fa-key"></i>
-                            </div>
-
-                        </div>
-                        <div class="form-bottom">
-                            <form role="form" action="/accounts/auth_git/" method="post"
-                                  class="login-form">{% csrf_token %}
-                                <div class="form-group">
-                                    <label class="sr-only" for="username">Username</label>
-                                    <input type="text" name="username" placeholder="Username..."
-                                           class="form-username form-control" id="username">
-                                </div>
-                                <div class="form-group">
-                                    <label class="sr-only" for="password">Password</label>
-                                    <input type="password" name="password" placeholder="Password..."
-                                           class="form-password form-control" id="password">
-                                </div>
-                                <button type="submit" class="btn">Sign in!</button>
-                                <a href="/accounts/accounts_home/"><span class="glyphicon glyphicon-refresh"></span>
-                                    Refresh</a></li>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -135,9 +97,6 @@
             position:absolute;
             top:400px;
         }
-        #id_col {
-            background-color: white;
-        }
     </style>
 
     <script>
@@ -153,7 +112,7 @@
             return false;
             }
         }
-        function myFunction() {
+        function myFunction3() {
             document.getElementById("script-button").style.color = "red";
         }
 
@@ -164,6 +123,15 @@
                 }
             });
         });
+
+        function myFunction() {
+            window.open("https://github.com/login", "_blank", "toolbar=yes," +
+                    "scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+        }
+        function myFunction1() {
+            window.open("http://10.76.205.223:8080", "_blank", "toolbar=yes," +
+                    "scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+        }
 
     </script>
 
