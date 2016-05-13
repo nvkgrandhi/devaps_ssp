@@ -3,6 +3,7 @@ import os
 import select
 import sys
 import time
+import json
 
 import paramiko
 import requests
@@ -46,7 +47,7 @@ def login(request):
                 auth_user = User.objects.get(username=username)
                 auth_user.password = password
                 if auth_user is not None:
-                    if auth_user.username == 'admin' and auth_user.password == password :
+                    if auth_user.username == 'admin' and auth_user.password == password:
                         if auth_user.is_active:
                             return render(request, 'admin.html', {'user': auth_user.username})
                         else:
@@ -67,7 +68,6 @@ def login(request):
         else:
             error = 'Please enter username and password to login'
             return render(request, 'login.html', {'error': error})
-
     else:
         form = LoginForm()
         return render(request, 'login.html', {'form': form})
@@ -141,7 +141,7 @@ def update_user(request, user_id):
     return render(request, 'update_user.html', data)
 
 
-def delete(request):
+def delete():
     pass
 
 
@@ -274,20 +274,131 @@ def execute_jenkins(request):
 
 def auth_git(request):
     logger.info("Calling auth_git function to authenticate github account")
-    import pdb; pdb.set_trace();
+    # import pdb; pdb.set_trace();
 
-    if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
+    # if request.method == 'POST':
+    #     username = request.POST.get('username')
+    #     password = request.POST.get('password')
+    #
+    #     r = requests.get('https://api.github.com', auth=(username, password))
+    #
+    #     # print(r.status_code)
+    #     # print(r.headers['content-type'])
 
-        r = requests.get('https://api.github.com', auth=(username, password))
+    username = 'nvkgrandhi'
+    password = 'KamalaN_#104'
+    response = requests.get('https://api.github.com', auth=(username, password))
 
-        print(r.status_code)
-        print(r.headers['content-type'])
-
-    return HttpResponse(r.status_code)
-
-
-
+    rep = requests.get('https://api.github.com')
+    rep1 = requests.get('https://api.github.com', auth=(username, password))
+    # json_data = json.loads(str(rep))
 
 
+    req = requests.get('https://api.github.com/users/nvkgrandhi')
+    # content = req.text
+    # jsonList = []
+    # jsonList.append(req.json())
+    # userData = {}
+    # for data in jsonList:
+    #     userData['name'] = data['name']
+    #     userData['blog'] = data['blog']
+    #     userData['email'] = data['email']
+    #     userData['public_gists'] = data['public_gists']
+    #     userData['public_repos'] = data['public_repos']
+    #     userData['avatar_url'] = data['avatar_url']
+    #     userData['followers'] = data['followers']
+    #     userData['following'] = data['following']
+    #
+    # parsedData.append(userData)
+    # return render(request, 'profile.html', {'data': parsedData})
+
+
+
+
+
+    # return HttpResponse(response.headers['content-type'])
+    # return HttpResponse(json_data)
+    # return HttpResponse(rep)
+    # return HttpResponse(rep1)
+    # return HttpResponse(content)
+    # return HttpResponse(parsedData)
+    return HttpResponse(req)
+
+
+# def profile(request):
+#     parsedData = []
+#     if request.method == 'POST':
+#         username = request.POST.get('user')
+#         req = requests.get('https://api.github.com/users/' + username)
+#         jsonList = []
+#         jsonList.append(req.json())
+#         userData = {}
+#         for data in jsonList:
+#             userData['name'] = data['name']
+#             userData['blog'] = data['blog']
+#             userData['email'] = data['email']
+#             userData['public_gists'] = data['public_gists']
+#             userData['public_repos'] = data['public_repos']
+#             userData['avatar_url'] = data['avatar_url']
+#             userData['followers'] = data['followers']
+#             userData['following'] = data['following']
+#         parsedData.append(userData)
+#     return render(request, 'app/profile.html', {'data': parsedData})
+
+
+def profile(request):
+    logger.info("Calling auth_git function to authenticate github account")
+    parsedData = []
+    username = 'nvkgrandhi'
+    password = 'KamalaN_#104'
+
+    req = requests.get('https://api.github.com/users/nvkgrandhi')
+    jsonList = []
+    jsonList.append(req.json())
+    userData = {}
+    for data in jsonList:
+        userData['name'] = data['name']
+        userData['blog'] = data['blog']
+        userData['email'] = data['email']
+        userData['public_gists'] = data['public_gists']
+        userData['public_repos'] = data['public_repos']
+        userData['avatar_url'] = data['avatar_url']
+        userData['followers'] = data['followers']
+        userData['following'] = data['following']
+
+    parsedData.append(userData)
+    return render(request, 'profile.html', {'data': parsedData})
+
+
+def reposit(request):
+
+    logger.info("Calling auth_git function to authenticate github account")
+
+    username = 'nvkgrandhi'
+    password = 'KamalaN_#104'
+
+
+    req = requests.get('https://api.github.com/users/nvkgrandhi/repos')
+    req = req.json()
+    parsedData = []
+    for data in req:
+        # userData['name'] = data['name']
+        parsedData.append(data['name'])
+
+    rep_branch = requests.get('https://api.github.com/repos/nvkgrandhi/devaps_ssp/branches')
+    rep_branch = rep_branch.json()
+    rbdata = []
+    for rb in rep_branch:
+        rbdata.append(rb['name'])
+
+    branch_commits = requests.get('https://api.github.com/repos/nvkgrandhi/devaps_ssp/nvk_devel/commits')
+    # branch_commits = branch_commits.json()
+    # bcommit = []
+    # for bc in branch_commits:
+    #     bcommit.append(bc[''])
+
+
+    # return render(request, 'repositorys.html', {'data': parsedData, 'rbdata': rbdata})
+    # return HttpResponse(req)
+    # return HttpResponse(rbdata)
+    return HttpResponse(branch_commits)

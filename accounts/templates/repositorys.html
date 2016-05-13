@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load bootstrap3 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1 class="text-center"> Github Repositories Data </h1>
+	    <div class="col-lg-12">
+        <style>
+            .form-group {
+            max-width: 550px;
+            padding: 15px;
+            margin: 0 auto;
+            }
+        </style>
+        </div>
+
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Repository
+            <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    {% for dt in data %}
+                        <li>{{ dt }}</li>
+                    {% endfor %}
+                </ul>
+    </div>
+
+    <div class="form-group">
+        <label for="repo">Repository:</label>
+            <select class="form-control" id="repo" name="repo" title="Select Repository">
+                <option value=""></option>
+                {% for dt in data %}
+                    <option>{{ dt }}</option>
+                {% endfor %}
+            </select>
+
+        <label for="branch">Branch:</label>
+            <select class="form-control" id="branch" name="branch" title="Select branch">
+                <option value=""></option>
+                {% for rd in rbdata %}
+                    <option>{{ rd }}</option>
+                {% endfor %}
+            </select>
+    </div>
+</body>
+</html>
+

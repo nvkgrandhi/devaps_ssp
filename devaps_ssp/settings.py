@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'bootstrap3',
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -168,3 +169,11 @@ LOGGING = {
 #     # make all loggers use the console.
 #     for logger in LOGGING['loggers']:
 #         LOGGING['loggers'][logger]['handlers'] = ['console']
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}

@@ -1,4 +1,4 @@
-from django.conf.urls import url
+from django.conf.urls import url, include
 from . import views
 
 urlpatterns = [
@@ -17,4 +17,7 @@ urlpatterns = [
     url(r'^create_file/', views.create_file, name='create_file'),
     url(r'^execute_jenkins/', views.execute_jenkins, name='execute_jenkins'),
     url(r'^auth_git/', views.auth_git, name='auth_git'),
+    # url(r'^profile/', views.profile, name='profile'),
+    url(r'^profile/$', views.profile, name='profile'),
+    url(r'^reposit/$', views.reposit, name='reposit'),
 ]
