@@ -976,3 +976,24 @@ Calling Home Page Function
 [2016-05-13 12:32:59,345] INFO views 7668 8188 [accounts.views:375] Calling auth_git function to authenticate github account
 [2016-05-13 12:35:47,358] INFO views 7644 6208 [accounts.views:375] Calling auth_git function to authenticate github account
 [2016-05-13 12:36:18,797] INFO views 7484 6000 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 14:52:17,824] INFO views 9076 9024 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 17:46:27,402] INFO views 5136 5144 [accounts.views:25] Calling Home Page Function
+[2016-05-13 17:47:43,067] INFO views 5136 5876 [accounts.views:35] Calling Login Page Function
+[2016-05-13 17:47:53,318] INFO views 5136 7044 [accounts.views:40] Calling login Function
+[2016-05-13 17:48:00,899] INFO views 5136 6748 [accounts.views:40] Calling login Function
+[2016-05-13 17:48:07,808] INFO views 5136 6720 [accounts.views:87] Calling Register User Function
+[2016-05-13 17:48:15,100] INFO views 5136 5496 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 17:50:34,769] INFO views 5744 5028 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 17:51:10,616] INFO views 4540 6184 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 17:51:28,071] INFO views 3408 6712 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 17:55:43,796] INFO views 1200 6268 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 17:56:12,237] INFO views 4440 6180 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 17:58:03,659] INFO views 2324 1476 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:03:51,401] INFO views 1200 7060 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:04:50,553] INFO views 4912 6528 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:06:21,077] INFO views 6656 4068 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:06:42,055] INFO views 4536 6968 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:12:12,210] INFO views 6984 6316 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:15:52,739] INFO views 7164 920 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:19:39,560] INFO views 4556 3292 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:20:03,039] INFO views 4556 444 [accounts.views:375] Calling auth_git function to authenticate github account

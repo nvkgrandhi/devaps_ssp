@@ -391,14 +391,30 @@ def reposit(request):
     for rb in rep_branch:
         rbdata.append(rb['name'])
 
-    branch_commits = requests.get('https://api.github.com/repos/nvkgrandhi/devaps_ssp/nvk_devel/commits')
+    # branch_commits = requests.get('https://api.github.com/repos/nvkgrandhi/devaps_ssp/nvk_devel/commits')
     # branch_commits = branch_commits.json()
     # bcommit = []
     # for bc in branch_commits:
     #     bcommit.append(bc[''])
 
 
-    # return render(request, 'repositorys.html', {'data': parsedData, 'rbdata': rbdata})
+    # return render(request, 'repositorys.html', {'data': parsedData, 'rbdata': rbdata, 'commit': bcommit})
     # return HttpResponse(req)
     # return HttpResponse(rbdata)
-    return HttpResponse(branch_commits)
+
+    # GET / repos /:owner /:repo / stats / contributors
+    contributors_list = requests.get('https://api.github.com/repos/nvkgrandhi/devaps_ssp/commits?sha=6e7728c40da7334e19490ad4535288199d9e8647')
+    # contributors_list = requests.get('https://api.github.com/repos/nvkgrandhi/devaps_ssp/branches')
+    contributors_list = contributors_list.json()
+    crdata = []
+    for cr in contributors_list:
+        crdata.append(cr['sha'])
+
+    total_commits = len(crdata)
+
+    # return HttpResponse(contributors_list)
+    return render(
+        request,
+        'repositorys.html',
+        {'data': parsedData, 'rbdata': rbdata, 'commits': crdata, 'total_comits': total_commits}
+    )

@@ -48,6 +48,18 @@
                     <option>{{ rd }}</option>
                 {% endfor %}
             </select>
+
+        <label for="commits">Commits:</label>
+            <select class="form-control" id="commits" name="commits" title="Select branch">
+                <option value=""></option>
+                {% for ct in commits %}
+                    <option>{{ ct }}</option>
+                {% endfor %}
+            </select>
+
+        <h3 style="text-align: center"> Total Commits: {{ total_comits }}</h3>
+
+
     </div>
 </body>
 </html>
