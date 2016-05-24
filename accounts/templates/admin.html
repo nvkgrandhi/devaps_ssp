@@ -7,107 +7,183 @@
 {% block content %}
     <div class="topcorner">
         <ul class="nav navbar-nav navbar-right">
+            <div class="dropdown" id="ddown">
+                <button class="btn dropdown-toggle btn-lg" type="button" data-toggle="dropdown"
+                        style="font-size:15px; height:50px; width:120px">User Actions
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="/accounts/create_user/">
+                        <span class="glyphicon glyphicon-user"></span> Create User</a></li>
+                    <li><a href="/accounts/list_users/">
+                        <span class="glyphicon glyphicon-th-list"></span> List All Users</a></li>
+                    <li><a href="/accounts/list_users/">
+                        <span class="glyphicon glyphicon-remove"></span> Delete User</a></li>
+                    <li><a href="/accounts/update/">
+                        <span class="glyphicon glyphicon-edit"></span> Edit User</a></li>
+                </ul>
+            </div>
+            <div id="id_li">
+            <li><span class="glyphicon glyphicon-user"></span> Welcome {{user}}</li>
+            </div>
             <li><a href="/accounts/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         </ul>
     </div>
     <div class="container">
-        <div class="row">
-            <p> Welcome {{ user }} </p>
-            <div class="btn-group btn-group-lg">
-                <a href="/accounts/create_user/" class="btn btn-primary">Create User</a>
-                <a href="/accounts/list_users/" class="btn btn-primary">List All Users</a>
-                <a href="/accounts/list_users/" class="btn btn-primary">Delete User</a>
-                <a href="/accounts/update/" class="btn btn-primary">Edit User</a>
+        <h2>CI/CD Process</h2>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#menu1">Development Team</a></li>
+            <li><a data-toggle="tab" href="#menu2">Version Control Systems</a></li>
+            <li><a data-toggle="tab" href="#menu3">Build & Unit Test</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>HOME</h3>
+                <p>Welcome to DevOps Dashboard for CI/CD</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Development Team 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <div class="form-group">
+                    <label for="vcs">List of Version Control Tools:</label>
+                    <select class="form-control" id="vcs" name="vcs" title="Select Version Controler">
+                        <option value="">Select Tool</option>
+                        <option onclick="show('GithubInfo')">GitHub</option>
+                        <option>SVN</option>
+                    </select>
+                </div>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <h3>Build & Unit Test</h3>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+        </div>
+
+        <div id="GithubInfo" style="display:none">
+            <div class="form-bottom">
+                <form id='id_form_submit' role="form" action="" method="post" class="git-form">{% csrf_token %}
+                    <h4>Authentication to Github</h4>
+                    <div class="form-group">
+                        <label class="sr-only" for="username">Username</label>
+                        <input type="text" name="username" value="nvkgrandhi" placeholder="Username..." class="form-username form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <input type="password" name="password" value="KamalaN_#104" placeholder="Password..." class="form-password form-control" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-default">Authenticate!</button>
+                </form>
             </div>
         </div>
     </div>
-    <pre></pre>
-    <div class="container">
-        <button type="button" class="btn btn-default btn-lg" id="myBtn" onclick="show('PersonalInfo1')">
-            Build Pipe Line</button>
-        <button type="button" class="btn btn-default btn-lg" id="myBtn1" onclick="show('PersonalInfo2')">
-            Continues Testing</button>
-        <button type="button" class="btn btn-default btn-lg" id="myBtn2" onclick="show('PersonalInfo3')">
-            Deployment </button>
-        <div id="PersonalInfo1" style="display:none">
-            <form name='input' action="/accounts/execute_jenkins/" method="post">{% csrf_token %}
-            <table class="table table-striped table-bordered">
-                <!--<h4 id="id_h4">SELECT BELOW TOLLS TO START BUILD PROCESS</h4>-->
-                <caption style="text-align:center; color: darkblue">
-                    <strong>SELECT BELOW TOLLS TO START BUILD PROCESS</strong></caption>
-                <thead>
-                    <tr>
-                        <th>Code Review Tools</th>
-                        <th>Version Control Tools</th>
-                        <th>Build Tools</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <select class="form-control" id="idtool" name="cr" title="Select Tool" >
-                                <option value=""></option>
-                                <option>Gerrit</option>
-                                <option>.....</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select class="form-control" id="idtool1" name="vcs" title="Select Tool">
-                                <option value=""></option>
-                                <option onclick="myFunction()">Git</option>
-                                <option>SVN</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select class="form-control" id="idtool2" name="bd" title="Select Tool">
-                                <option value=""></option>
-                                <option onclick="myFunction1()">Jenkins</option>
-                                <option>Travisci</option>
-                            </select>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="script-button">
-                <button onclick="myFunction3()" type="submit" class="btn btn-primary" id="script-button">BUILD</button>
-            </div>
-            </form>
-            <form action="#" method="post">{% csrf_token %}
-            <table class="table table-striped table-bordered" id="id_table">
-            <thead>
-                <tr>
-                    <th>Docker Build Image</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <select class="form-control" id="dctool" name="cr" title="Select Tool" >
-                            <option value=""></option>
-                            <option>Docker</option>
-                        </select>
-                    </td>
-                </tr>
-            </tbody>
-            </table>
-            <div class="script-button1">
-                <button onclick="myFunction3()" type="submit" class="btn btn-primary"
-                        id="script-button1">Create Image</button>
-                <button onclick="myFunction3()" type="submit" class="btn btn-primary"
-                        id="script-button2">Upload Image</button>
-                <a href="/accounts/accounts_home/" class="btn btn-primary">Return to Home Page</a>
-            </div>
-            </form>
-        </div>
-        <div id="PersonalInfo2" style="display:none">
-            <form name='input' action="/accounts/execute_jenkins/" method="post">{% csrf_token %}
-            <table class="table table-striped table-bordered">
-
-            </table>
-            </form>
+    <!--<div id="result">-->
+    <!--</div>-->
+    <div class="container" id="id_repo" style="display:none; width:500px;">
+        <h3 class="text-center"> Github Repositories Data </h3>
+        <label for="repo">Select Repository</label>
+            <select class="form-control" id="repo" name="repo" title="Select Repository">
+                <option value=""></option>
+                    <!--{% for dt in response_data %}-->
+                        <!--<option>{{ dt }}</option>-->
+                    <!--{% endfor %}-->
+                <option></option>
+            </select>
+        <div id="location">
 
         </div>
     </div>
+
+
+
+    <!--<div class="container">-->
+        <!--<button type="button" class="btn btn-default btn-lg" id="myBtn" onclick="show('PersonalInfo1')">-->
+            <!--Build Pipe Line</button>-->
+        <!--<button type="button" class="btn btn-default btn-lg" id="myBtn1" onclick="show('PersonalInfo2')">-->
+            <!--Continues Testing</button>-->
+        <!--<button type="button" class="btn btn-default btn-lg" id="myBtn2" onclick="show('PersonalInfo3')">-->
+            <!--Deployment </button>-->
+        <!--<div id="PersonalInfo1" style="display:none">-->
+            <!--<form name='input' action="/accounts/execute_jenkins/" method="post">{% csrf_token %}-->
+            <!--<table class="table table-striped table-bordered">-->
+                <!--&lt;!&ndash;<h4 id="id_h4">SELECT BELOW TOLLS TO START BUILD PROCESS</h4>&ndash;&gt;-->
+                <!--<caption style="text-align:center; color: darkblue">-->
+                    <!--<strong>SELECT BELOW TOLLS TO START BUILD PROCESS</strong></caption>-->
+                <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<th>Code Review Tools</th>-->
+                        <!--<th>Version Control Tools</th>-->
+                        <!--<th>Build Tools</th>-->
+                    <!--</tr>-->
+                <!--</thead>-->
+                <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<td>-->
+                            <!--<select class="form-control" id="idtool" name="cr" title="Select Tool" >-->
+                                <!--<option value=""></option>-->
+                                <!--<option>Gerrit</option>-->
+                                <!--<option>.....</option>-->
+                            <!--</select>-->
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--<select class="form-control" id="idtool1" name="vcs" title="Select Tool">-->
+                                <!--<option value=""></option>-->
+                                <!--<option onclick="myFunction()">Git</option>-->
+                                <!--<option>SVN</option>-->
+                            <!--</select>-->
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--<select class="form-control" id="idtool2" name="bd" title="Select Tool">-->
+                                <!--<option value=""></option>-->
+                                <!--<option onclick="myFunction1()">Jenkins</option>-->
+                                <!--<option>Travisci</option>-->
+                            <!--</select>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                <!--</tbody>-->
+            <!--</table>-->
+            <!--<div class="script-button">-->
+                <!--<button onclick="myFunction3()" type="submit" class="btn btn-primary" id="script-button">BUILD</button>-->
+            <!--</div>-->
+            <!--</form>-->
+            <!--<form action="#" method="post">{% csrf_token %}-->
+            <!--<table class="table table-striped table-bordered" id="id_table">-->
+            <!--<thead>-->
+                <!--<tr>-->
+                    <!--<th>Docker Build Image</th>-->
+                <!--</tr>-->
+            <!--</thead>-->
+            <!--<tbody>-->
+                <!--<tr>-->
+                    <!--<td>-->
+                        <!--<select class="form-control" id="dctool" name="cr" title="Select Tool" >-->
+                            <!--<option value=""></option>-->
+                            <!--<option>Docker</option>-->
+                        <!--</select>-->
+                    <!--</td>-->
+                <!--</tr>-->
+            <!--</tbody>-->
+            <!--</table>-->
+            <!--<div class="script-button1">-->
+                <!--<button onclick="myFunction3()" type="submit" class="btn btn-primary"-->
+                        <!--id="script-button1">Create Image</button>-->
+                <!--<button onclick="myFunction3()" type="submit" class="btn btn-primary"-->
+                        <!--id="script-button2">Upload Image</button>-->
+                <!--<a href="/accounts/accounts_home/" class="btn btn-primary">Return to Home Page</a>-->
+            <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+        <!--<div id="PersonalInfo2" style="display:none">-->
+            <!--<form name='input' action="/accounts/execute_jenkins/" method="post">{% csrf_token %}-->
+            <!--<table class="table table-striped table-bordered">-->
+
+            <!--</table>-->
+            <!--</form>-->
+
+        <!--</div>-->
+    <!--</div>-->
 
     <style>
         .topcorner {
@@ -115,6 +191,17 @@
             top:3px;
             right: 10px;
          }
+        #ddown {
+            position:absolute;
+            top:0px;
+            right:200px;
+        }
+        #id_li {
+            position: absolute;
+            top:15px;
+            right:-5px;
+            width:200px
+        }
         table {
             position:absolute;
             top:250px;
@@ -140,9 +227,40 @@
             position:absolute;
             top:550px;
         }
+        .form-group {
+            max-width: 250px;
+            padding: 15px;
+            /* margin: 0 auto; */
+        }
     </style>
 
-    <script>
+    <script type="text/javascript">
+
+        $(document).on('submit', '#id_form_submit', function(e){
+            e.preventDefault();
+
+            $.ajax({
+                type:'POST',
+                url:'../git_authenticate/',
+                dataType:'json',
+                data:{
+                        name:$('#username').val(),
+                        pwd:$('#password').val(),
+                        csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
+                     },
+                success:function(response){
+                    var data = response
+                    console.log(response.data);
+                    /* $('#repo').html(response.data);*/
+                    /* var response_data = response; */
+                    $("#location").html(response.data);
+                    /* $('#result').html(); */
+                    /* $('#repo').html(response_data); */
+                    $('#id_form_submit').hide();
+                    $('#id_repo').show();
+                }
+            });
+        });
         function show(ele) {
             var srcElement = document.getElementById(ele);
             if(srcElement != null) {

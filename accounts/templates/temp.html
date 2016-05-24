@@ -421,3 +421,87 @@ function GetSelectedTextValue(ddlFruits) {
         #id_col {
             background-color: white;
         }
+
+
+
+
+<div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Repository
+            <form method="post" action="/accounts/register/" name="RegistrationForm">{% csrf_token %}
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select class="form-control" id="role" name="role" title="Select User Role">
+                        <option value=""></option>
+                        <option>Developer</option>
+                        <option>QA</option>
+                    </select>
+                </div>
+            </form>
+
+            <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    {% for dt in data %}
+                        <li>{{ dt }}</li>
+                    {% endfor %}
+                </ul>
+    </div>
+
+
+
+<!--$.post("../branch/?()", {'client_data': data}, function(result){-->
+                    <!--console.log("************");-->
+                    <!--console.log(result);-->
+                <!--},'json');-->
+
+dataType:'json',
+
+
+
+
+<form method="post" action="" name="RepoData">{% csrf_token %}
+    <div class="form-group">
+        <label for="repo">Select Repository</label>
+        <select class="form-control" id="repo" name="repo" title="Select Repository">
+            <option value=""></option>
+                {% for dt in data %}
+                    <option>{{ dt }}</option>
+                {% endfor %}
+        </select>
+    </div>
+    </form>
+    <div id="result">
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#repo").change(function() {
+                var data = $('#repo').val();
+                console.log(" ============= repos");
+                console.log(data);
+                $.ajax({
+                    url:'../branch/'+data+'/',
+                    type:'POST',
+                    dataType: 'json',
+                    c_data:{'client_data': data},
+                    success:function(c_data){
+                        $('#result').html(c_data);
+                    },
+                    error:function(){
+                    }
+                });
+            });
+        });
+    </script>
+
+<div class="container">
+        <div class="row">
+            <p> Welcome {{ user }} </p>
+            <div class="btn-group btn-group-lg">
+                <a href="/accounts/create_user/" class="btn btn-primary">Create User</a>
+                <a href="/accounts/list_users/" class="btn btn-primary">List All Users</a>
+                <a href="/accounts/list_users/" class="btn btn-primary">Delete User</a>
+                <a href="/accounts/update/" class="btn btn-primary">Edit User</a>
+            </div>
+        </div>
+    </div>

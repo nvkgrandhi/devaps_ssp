@@ -997,3 +997,766 @@ Calling Home Page Function
 [2016-05-13 18:15:52,739] INFO views 7164 920 [accounts.views:375] Calling auth_git function to authenticate github account
 [2016-05-13 18:19:39,560] INFO views 4556 3292 [accounts.views:375] Calling auth_git function to authenticate github account
 [2016-05-13 18:20:03,039] INFO views 4556 444 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:25:40,220] INFO views 4556 4552 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:25:47,915] INFO views 4556 1904 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:27:05,422] INFO views 5816 5196 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:28:37,386] INFO views 6884 4028 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:29:48,779] INFO views 6200 7088 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:30:25,329] INFO views 6436 6432 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:30:46,751] INFO views 6436 1700 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:36:43,202] INFO views 7116 1300 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:37:20,905] INFO views 4860 6732 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:37:47,484] INFO views 6904 4544 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:38:01,255] INFO views 4508 5820 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:38:38,128] INFO views 4768 6676 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-13 18:39:00,612] INFO views 4924 6124 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-16 10:55:10,064] INFO views 7356 7416 [accounts.views:25] Calling Home Page Function
+[2016-05-16 10:55:12,443] INFO views 7356 1996 [accounts.views:35] Calling Login Page Function
+[2016-05-16 10:55:22,589] INFO views 7356 7828 [accounts.views:40] Calling login Function
+[2016-05-16 10:55:38,768] INFO views 7356 7300 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-16 10:55:54,021] INFO views 7356 5868 [accounts.views:25] Calling Home Page Function
+[2016-05-16 11:03:35,580] INFO views 6016 6344 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-16 11:06:29,888] INFO views 564 6468 [accounts.views:375] Calling auth_git function to authenticate github account
+[2016-05-16 11:09:24,893] INFO views 6272 7512 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:10:09,741] INFO views 6272 5512 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:35:51,124] INFO views 6684 5428 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:39:13,987] INFO views 5512 7228 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:39:20,040] INFO views 5512 5540 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:42:36,321] INFO views 6596 4068 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:43:15,305] INFO views 2608 6820 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:43:39,676] INFO views 2608 6100 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:47:24,574] INFO views 2608 5980 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:51:38,488] INFO views 7856 1620 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:53:35,703] INFO views 8140 4584 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:53:51,821] INFO views 7588 6192 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:54:29,524] INFO views 7588 8140 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:54:33,905] INFO views 7588 7088 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 11:55:01,129] INFO views 7588 5268 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 14:22:16,936] INFO views 7976 9008 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 14:24:32,926] INFO views 8740 6732 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 14:29:38,763] INFO views 7304 2052 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 14:30:30,160] INFO views 7304 8052 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 14:36:05,789] INFO views 1916 8900 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 14:37:24,410] INFO views 6732 8652 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-16 14:38:49,292] INFO views 1976 7856 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 14:39:03,859] INFO views 1976 5968 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-16 14:50:33,477] INFO views 7620 9068 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 10:20:08,814] INFO views 4220 5352 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 10:20:24,989] INFO views 4220 2324 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 10:21:28,179] INFO views 7908 6932 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 10:22:49,478] INFO views 8796 4916 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:12:55,149] INFO views 7792 8672 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:14:52,096] INFO views 7792 8768 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:15:29,296] INFO views 7792 6628 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:17:16,173] INFO views 7792 4436 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:19:44,523] INFO views 7792 7636 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:19:50,119] INFO views 7792 252 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:20:35,241] INFO views 7792 6312 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:20:39,330] INFO views 7792 8056 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:21:18,785] INFO views 7792 8912 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:21:21,220] INFO views 7792 7328 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:21:24,282] INFO views 7792 3420 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:22:05,279] INFO views 7792 5100 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:22:35,454] INFO views 7792 4288 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:22:39,030] INFO views 7792 5856 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:22:43,258] INFO views 7792 8632 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:23:18,988] INFO views 7792 8368 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:24:24,590] INFO views 7792 7808 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:24:50,409] INFO views 7792 8336 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:25:00,586] INFO views 7792 6656 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:25:29,280] INFO views 7792 7116 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:37:51,837] INFO views 7296 6724 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:37:53,108] INFO views 7296 1564 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:50:17,873] INFO views 4284 1240 [accounts.views:25] Calling Home Page Function
+[2016-05-17 11:50:19,846] INFO views 4284 6384 [accounts.views:35] Calling Login Page Function
+[2016-05-17 11:50:24,072] INFO views 4284 3904 [accounts.views:40] Calling login Function
+[2016-05-17 11:50:27,675] INFO views 4284 7956 [accounts.views:82] Calling Create User Function
+[2016-05-17 11:50:30,299] INFO views 4284 6268 [accounts.views:30] Calling Admin Page Function
+[2016-05-17 11:50:31,876] INFO views 4284 7580 [accounts.views:126] Calling Edit User Function
+[2016-05-17 11:50:39,478] INFO views 4284 7380 [accounts.views:133] Calling Edit User Function
+[2016-05-17 11:52:27,633] INFO views 4284 7668 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:53:02,138] INFO views 4284 5444 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:53:34,890] INFO views 4284 9208 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 11:53:52,376] INFO views 4284 8256 [accounts.views:376] Calling auth_git function to authenticate github account
+[2016-05-17 12:09:21,248] INFO views 7328 8956 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:13:01,819] INFO views 7024 7212 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:13:29,570] INFO views 5384 8948 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:18:41,450] INFO views 3136 3068 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:20:37,441] INFO views 3756 2356 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:28:35,036] INFO views 6460 7064 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:29:49,963] INFO views 6460 9128 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:30:29,024] INFO views 8632 5088 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:30:57,463] INFO views 8632 4816 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:32:40,284] INFO views 6396 6256 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:33:06,229] INFO views 7708 6812 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:33:15,285] INFO views 6856 8960 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:36:16,877] INFO views 7416 5384 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:37:06,277] INFO views 5876 7008 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:38:58,505] INFO views 5876 6504 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:39:41,163] INFO views 5396 7912 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:40:17,611] INFO views 5396 5964 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:40:40,323] INFO views 5396 7572 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:42:33,486] INFO views 1700 8860 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:49:30,755] INFO views 3384 7056 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:50:21,992] INFO views 3384 6600 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:51:57,769] INFO views 3384 3300 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 12:52:57,072] INFO views 4292 7912 [accounts.views:377] Calling auth_git function to authenticate github account
+[2016-05-17 13:23:10,411] INFO views 4292 8072 [accounts.views:26] Calling Home Page Function
+[2016-05-17 13:23:14,116] INFO views 4292 7800 [accounts.views:36] Calling Login Page Function
+[2016-05-17 13:23:20,293] INFO views 4292 8324 [accounts.views:41] Calling login Function
+[2016-05-17 13:57:52,825] INFO views 7292 1884 [accounts.views:373] Calling auth_git function to authenticate github account
+[2016-05-17 13:58:53,363] INFO views 7676 9036 [accounts.views:373] Calling auth_git function to authenticate github account
+[2016-05-17 13:59:58,405] INFO views 7676 8884 [accounts.views:373] Calling auth_git function to authenticate github account
+[2016-05-18 09:36:31,296] INFO views 5396 1296 [accounts.views:26] Calling Home Page Function
+[2016-05-18 09:36:34,827] INFO views 5396 7772 [accounts.views:36] Calling Login Page Function
+[2016-05-18 09:36:39,881] INFO views 5396 6136 [accounts.views:41] Calling login Function
+[2016-05-18 09:37:53,406] INFO views 5396 7372 [accounts.views:41] Calling login Function
+[2016-05-18 09:39:04,947] INFO views 5396 3488 [accounts.views:41] Calling login Function
+[2016-05-18 09:43:38,743] INFO views 5396 7360 [accounts.views:41] Calling login Function
+[2016-05-18 09:45:01,948] INFO views 5396 3384 [accounts.views:41] Calling login Function
+[2016-05-18 09:45:32,645] INFO views 5396 6392 [accounts.views:41] Calling login Function
+[2016-05-18 09:45:58,785] INFO views 5396 6196 [accounts.views:41] Calling login Function
+[2016-05-18 09:47:45,880] INFO views 5396 3776 [accounts.views:41] Calling login Function
+[2016-05-18 09:49:08,671] INFO views 5396 1292 [accounts.views:41] Calling login Function
+[2016-05-18 09:52:58,416] INFO views 5396 5872 [accounts.views:41] Calling login Function
+[2016-05-18 09:53:25,742] INFO views 5396 5352 [accounts.views:41] Calling login Function
+[2016-05-18 09:53:39,086] INFO views 5396 6976 [accounts.views:41] Calling login Function
+[2016-05-18 09:54:56,478] INFO views 5396 6016 [accounts.views:41] Calling login Function
+[2016-05-18 09:55:10,024] INFO views 5396 4596 [accounts.views:41] Calling login Function
+[2016-05-18 09:55:40,651] INFO views 5396 7212 [accounts.views:41] Calling login Function
+[2016-05-18 09:57:28,305] INFO views 5396 6752 [accounts.views:41] Calling login Function
+[2016-05-18 09:57:40,810] INFO views 5396 4780 [accounts.views:41] Calling login Function
+[2016-05-18 09:58:47,229] INFO views 5396 3516 [accounts.views:41] Calling login Function
+[2016-05-18 09:59:01,485] INFO views 5396 6268 [accounts.views:41] Calling login Function
+[2016-05-18 09:59:26,394] INFO views 5396 7228 [accounts.views:41] Calling login Function
+[2016-05-18 09:59:42,180] INFO views 5396 7952 [accounts.views:41] Calling login Function
+[2016-05-18 10:04:03,876] INFO views 5396 7160 [accounts.views:41] Calling login Function
+[2016-05-18 10:04:14,815] INFO views 5396 8060 [accounts.views:41] Calling login Function
+[2016-05-18 10:04:39,689] INFO views 5396 7732 [accounts.views:41] Calling login Function
+[2016-05-18 10:05:28,087] INFO views 5396 6336 [accounts.views:41] Calling login Function
+[2016-05-18 10:05:41,934] INFO views 5396 7736 [accounts.views:41] Calling login Function
+[2016-05-18 10:05:59,439] INFO views 5396 6284 [accounts.views:41] Calling login Function
+[2016-05-18 10:06:11,792] INFO views 5396 7256 [accounts.views:41] Calling login Function
+[2016-05-18 10:06:25,824] INFO views 5396 4868 [accounts.views:41] Calling login Function
+[2016-05-18 10:06:31,382] INFO views 5396 5492 [accounts.views:78] Calling Logout Function
+[2016-05-18 10:06:32,639] INFO views 5396 8096 [accounts.views:26] Calling Home Page Function
+[2016-05-18 10:06:33,772] INFO views 5396 6920 [accounts.views:36] Calling Login Page Function
+[2016-05-18 10:06:38,277] INFO views 5396 8076 [accounts.views:41] Calling login Function
+[2016-05-18 10:08:20,534] INFO views 5396 8072 [accounts.views:41] Calling login Function
+[2016-05-18 10:08:45,057] INFO views 5396 1188 [accounts.views:41] Calling login Function
+[2016-05-18 10:09:16,718] INFO views 5396 7484 [accounts.views:41] Calling login Function
+[2016-05-18 10:09:26,241] INFO views 5396 4728 [accounts.views:41] Calling login Function
+[2016-05-18 10:09:50,844] INFO views 5396 4768 [accounts.views:41] Calling login Function
+[2016-05-18 10:10:54,844] INFO views 5396 6788 [accounts.views:41] Calling login Function
+[2016-05-18 10:11:11,372] INFO views 5396 7160 [accounts.views:41] Calling login Function
+[2016-05-18 10:11:29,715] INFO views 5396 3408 [accounts.views:41] Calling login Function
+[2016-05-18 10:11:36,924] INFO views 5396 7212 [accounts.views:41] Calling login Function
+[2016-05-18 10:11:44,755] INFO views 5396 1840 [accounts.views:41] Calling login Function
+[2016-05-18 10:11:54,072] INFO views 5396 6396 [accounts.views:41] Calling login Function
+[2016-05-18 10:12:22,065] INFO views 5396 6220 [accounts.views:41] Calling login Function
+[2016-05-18 10:12:34,087] INFO views 4004 7736 [accounts.views:41] Calling login Function
+[2016-05-18 10:12:50,391] INFO views 4004 6300 [accounts.views:41] Calling login Function
+[2016-05-18 10:12:58,009] INFO views 4004 7692 [accounts.views:41] Calling login Function
+[2016-05-18 10:13:24,049] INFO views 4004 2904 [accounts.views:41] Calling login Function
+[2016-05-18 10:13:38,632] INFO views 4004 2740 [accounts.views:41] Calling login Function
+[2016-05-18 10:14:22,023] INFO views 4004 7452 [accounts.views:41] Calling login Function
+[2016-05-18 10:14:31,526] INFO views 4004 4592 [accounts.views:41] Calling login Function
+[2016-05-18 10:14:40,633] INFO views 4004 5792 [accounts.views:41] Calling login Function
+[2016-05-18 10:14:45,348] INFO views 4004 7564 [accounts.views:41] Calling login Function
+[2016-05-18 10:14:54,153] INFO views 4004 5812 [accounts.views:41] Calling login Function
+[2016-05-18 10:15:00,299] INFO views 4004 4596 [accounts.views:83] Calling Create User Function
+[2016-05-18 10:15:02,184] INFO views 4004 6828 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:16:04,583] INFO views 4004 5632 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:47:43,061] INFO views 4004 6568 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:49:18,727] INFO views 4004 836 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:49:35,019] INFO views 4004 1456 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:49:54,509] INFO views 4004 3976 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:50:19,269] INFO views 4004 4316 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:50:46,024] INFO views 4004 3336 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:51:27,330] INFO views 4004 5668 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:51:42,475] INFO views 4004 6988 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:51:59,520] INFO views 4004 7524 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:52:14,660] INFO views 4004 3484 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:52:23,862] INFO views 4004 2904 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:52:34,420] INFO views 4004 7696 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:52:51,196] INFO views 4004 5372 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:53:07,914] INFO views 4004 5080 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:53:18,497] INFO views 4004 7040 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:55:13,390] INFO views 4004 6660 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:55:47,840] INFO views 4004 8132 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:56:01,680] INFO views 4004 7384 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:56:47,001] INFO views 4004 3704 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:57:04,395] INFO views 4004 128 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:57:28,077] INFO views 4004 7992 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:57:44,367] INFO views 4004 2536 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:58:27,629] INFO views 4004 4840 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:58:31,350] INFO views 4004 7936 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:58:41,584] INFO views 4004 4080 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:59:17,940] INFO views 4004 1072 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 10:59:48,193] INFO views 4004 6976 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:01:15,907] INFO views 4004 6060 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:01:32,405] INFO views 4004 1120 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:01:51,189] INFO views 4004 7200 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:02:08,542] INFO views 4004 8092 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:02:22,654] INFO views 4004 8068 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:02:31,710] INFO views 4004 7676 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:02:40,075] INFO views 4004 5588 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:02:46,024] INFO views 4004 7080 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:02:48,757] INFO views 4004 3128 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:02:57,752] INFO views 4004 2536 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:03:20,791] INFO views 4004 7588 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:03:46,541] INFO views 4004 7492 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:03:48,130] INFO views 4004 6268 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:03:48,296] INFO views 4004 7584 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:03:48,448] INFO views 4004 7632 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:03:48,628] INFO views 4004 3480 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:03:56,864] INFO views 4004 3976 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:04:07,761] INFO views 4004 7156 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:04:10,431] INFO views 4004 7004 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:04:36,650] INFO views 4004 6800 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:04:40,658] INFO views 4004 6312 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:04:45,998] INFO views 4004 3264 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:06:23,574] INFO views 4004 6828 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:06:32,125] INFO views 4004 4084 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:06:45,510] INFO views 4004 7404 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:06:52,318] INFO views 4004 240 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:07:02,854] INFO views 4004 7972 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:07:12,513] INFO views 4004 936 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:07:18,044] INFO views 4004 3244 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:07:23,295] INFO views 4004 6556 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:07:27,519] INFO views 4004 7256 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:07:34,664] INFO views 4004 2664 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:08:35,695] INFO views 4004 6320 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:08:41,756] INFO views 4004 5160 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:08:45,705] INFO views 4004 5864 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:08:54,799] INFO views 4004 7540 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:09:03,748] INFO views 4004 3516 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:09:08,517] INFO views 4004 1996 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:09:13,363] INFO views 4004 7256 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:09:23,293] INFO views 4004 5980 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:09:40,990] INFO views 4004 8152 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:09:47,366] INFO views 4004 3492 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:09:53,013] INFO views 4004 6832 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:09:58,539] INFO views 4004 6312 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:10:07,340] INFO views 4004 7940 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:10:37,063] INFO views 4004 5196 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:10:49,418] INFO views 4004 6184 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:11:50,108] INFO views 4004 7484 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:11:58,107] INFO views 4004 5804 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:12:05,068] INFO views 4004 7096 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:12:15,194] INFO views 4004 8036 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:12:21,920] INFO views 4004 7676 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:12:28,999] INFO views 4004 1724 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:12:37,185] INFO views 4004 7900 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:13:09,110] INFO views 4004 8076 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:13:49,322] INFO views 4004 7200 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:13:57,331] INFO views 4004 7940 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:14:04,666] INFO views 4004 1288 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:14:07,099] INFO views 4004 6124 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:14:12,210] INFO views 4004 7652 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:14:22,450] INFO views 4004 6360 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:15:03,918] INFO views 4004 3484 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:15:25,107] INFO views 4004 6588 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:15:35,275] INFO views 4004 7216 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:15:49,085] INFO views 4004 5004 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:16:00,691] INFO views 4004 8100 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:16:16,555] INFO views 4004 1612 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:16:33,750] INFO views 4004 6700 [accounts.views:127] Calling Edit User Function
+[2016-05-18 11:16:35,166] INFO views 4004 1456 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:16:36,786] INFO views 4004 6812 [accounts.views:83] Calling Create User Function
+[2016-05-18 11:16:46,148] INFO views 4004 7584 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:17:03,801] INFO views 4004 3596 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:17:12,007] INFO views 4004 6680 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:17:18,198] INFO views 4004 5308 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:18:25,628] INFO views 4004 7584 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 11:26:38,133] INFO views 4004 4820 [accounts.views:83] Calling Create User Function
+[2016-05-18 11:26:39,710] INFO views 4004 7660 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:25:37,004] INFO views 4004 7244 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:26:19,470] INFO views 4004 7628 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:26:21,490] INFO views 4004 5716 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:27:12,919] INFO views 4004 3080 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:31:34,053] INFO views 4004 5236 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:32:17,729] INFO views 4004 4984 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:33:49,288] INFO views 4004 7192 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:36:28,053] INFO views 7616 7632 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:36:30,944] INFO views 7616 5340 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:37:22,086] INFO views 6624 7248 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:37:24,841] INFO views 6624 5016 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:37:27,359] INFO views 6624 8172 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:37:27,895] INFO views 6624 6008 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:37:28,087] INFO views 6624 5024 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:37:28,291] INFO views 6624 6688 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:38:44,456] INFO views 7012 7372 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:38:48,116] INFO views 7012 7800 [accounts.views:348] Calling auth_git function to authenticate github account
+[2016-05-18 12:39:05,075] INFO views 7012 8136 [accounts.views:348] Calling auth_git function to authenticate github account
+[2016-05-18 12:45:53,362] INFO views 7012 7464 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:45:55,971] INFO views 7012 7584 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:47:17,943] INFO views 7012 3364 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:47:55,613] INFO views 7012 5400 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:48:29,610] INFO views 7012 3232 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:49:16,861] INFO views 7012 5160 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:49:55,252] INFO views 7012 7204 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:53:21,717] INFO views 7012 6500 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:53:23,924] INFO views 7012 6188 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:54:02,873] INFO views 7012 5876 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:54:04,629] INFO views 7012 5588 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:54:33,718] INFO views 7012 7728 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:54:40,617] INFO views 7012 7844 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:54:55,409] INFO views 7012 5000 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:55:03,216] INFO views 7012 6188 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:55:53,083] INFO views 7012 7200 [accounts.views:31] Calling Admin Page Function
+[2016-05-18 12:57:54,419] INFO views 7012 6124 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:40:27,412] INFO views 9168 7336 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:43:20,996] INFO views 5000 824 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:44:07,821] INFO views 5000 8888 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:45:27,731] INFO views 5000 3504 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:46:26,135] INFO views 5000 4320 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:48:22,383] INFO views 5000 7732 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:48:52,629] INFO views 5000 7144 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:49:01,494] INFO views 5000 7984 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:49:42,625] INFO views 5000 8344 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:49:49,365] INFO views 5000 6988 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:51:05,756] INFO views 5000 8576 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:52:10,256] INFO views 5000 128 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:52:25,760] INFO views 5000 5876 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:52:36,952] INFO views 5000 2664 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:53:02,218] INFO views 5000 7080 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:53:17,269] INFO views 5000 1468 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:53:42,852] INFO views 5000 3264 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:53:55,703] INFO views 5000 6088 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:54:09,839] INFO views 5000 6896 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:54:18,583] INFO views 5000 2816 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:54:44,468] INFO views 5000 9148 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:55:04,373] INFO views 5000 3668 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:55:21,509] INFO views 5000 6476 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:55:35,241] INFO views 5000 5604 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:55:59,724] INFO views 5000 8680 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:56:21,499] INFO views 5236 8180 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:56:33,922] INFO views 5236 8948 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 11:56:36,332] INFO views 5236 7600 [accounts.views:26] Calling Home Page Function
+[2016-05-19 11:56:58,856] INFO views 5236 7744 [accounts.views:36] Calling Login Page Function
+[2016-05-19 11:57:03,167] INFO views 5236 8008 [accounts.views:41] Calling login Function
+[2016-05-19 11:57:38,076] INFO views 5236 9192 [accounts.views:41] Calling login Function
+[2016-05-19 11:58:15,882] INFO views 5236 6876 [accounts.views:26] Calling Home Page Function
+[2016-05-19 11:58:33,223] INFO views 5236 1996 [accounts.views:41] Calling login Function
+[2016-05-19 11:58:41,049] INFO views 5236 7952 [accounts.views:36] Calling Login Page Function
+[2016-05-19 11:58:46,840] INFO views 5236 7676 [accounts.views:41] Calling login Function
+[2016-05-19 11:59:39,273] INFO views 5236 5308 [accounts.views:41] Calling login Function
+[2016-05-19 12:01:46,060] INFO views 5236 4976 [accounts.views:31] Calling Admin Page Function
+[2016-05-19 12:05:21,842] INFO views 5236 4864 [accounts.views:41] Calling login Function
+[2016-05-19 12:08:23,987] INFO views 5236 2596 [accounts.views:41] Calling login Function
+[2016-05-19 12:08:44,142] INFO views 5236 4728 [accounts.views:41] Calling login Function
+[2016-05-19 12:08:50,722] INFO views 5236 1556 [accounts.views:41] Calling login Function
+[2016-05-19 12:09:19,427] INFO views 8544 8316 [accounts.views:41] Calling login Function
+[2016-05-19 12:09:26,950] INFO views 8544 6940 [accounts.views:41] Calling login Function
+[2016-05-19 12:09:30,885] INFO views 8544 8520 [accounts.views:41] Calling login Function
+[2016-05-19 12:09:36,887] INFO views 8544 6008 [accounts.views:41] Calling login Function
+[2016-05-19 12:10:59,549] INFO views 8544 3556 [accounts.views:41] Calling login Function
+[2016-05-19 12:11:16,491] INFO views 8544 6500 [accounts.views:78] Calling Logout Function
+[2016-05-19 12:11:23,149] INFO views 8544 4728 [accounts.views:41] Calling login Function
+[2016-05-19 12:11:30,543] INFO views 8544 6748 [accounts.views:41] Calling login Function
+[2016-05-19 12:11:51,661] INFO views 8544 6180 [accounts.views:41] Calling login Function
+[2016-05-19 12:11:58,498] INFO views 8544 5080 [accounts.views:41] Calling login Function
+[2016-05-19 12:12:04,249] INFO views 8544 8804 [accounts.views:41] Calling login Function
+[2016-05-19 12:15:32,004] INFO views 8544 9000 [accounts.views:41] Calling login Function
+[2016-05-19 12:15:44,109] INFO views 8544 6024 [accounts.views:41] Calling login Function
+[2016-05-19 12:15:51,558] INFO views 8544 5160 [accounts.views:41] Calling login Function
+[2016-05-19 12:16:18,178] INFO views 8544 7396 [accounts.views:41] Calling login Function
+[2016-05-19 12:17:32,930] INFO views 8544 8408 [accounts.views:41] Calling login Function
+[2016-05-19 12:17:45,757] INFO views 8544 6752 [accounts.views:41] Calling login Function
+[2016-05-19 12:17:49,223] INFO views 8544 8116 [accounts.views:41] Calling login Function
+[2016-05-19 12:17:54,984] INFO views 8544 8468 [accounts.views:41] Calling login Function
+[2016-05-19 12:18:04,702] INFO views 8544 3120 [accounts.views:41] Calling login Function
+[2016-05-19 12:18:13,065] INFO views 8544 1696 [accounts.views:41] Calling login Function
+[2016-05-19 12:19:02,564] INFO views 8544 5280 [accounts.views:373] Calling auth_git function to authenticate github account
+[2016-05-20 11:31:45,035] INFO views 5208 8564 [accounts.views:26] Calling Home Page Function
+[2016-05-20 11:31:49,060] INFO views 5208 3276 [accounts.views:36] Calling Login Page Function
+[2016-05-20 11:31:57,978] INFO views 5208 3452 [accounts.views:41] Calling login Function
+[2016-05-20 11:32:00,123] INFO views 5208 5176 [accounts.views:41] Calling login Function
+[2016-05-20 11:32:03,986] INFO views 5208 5432 [accounts.views:41] Calling login Function
+[2016-05-20 11:33:10,123] INFO views 4828 4868 [accounts.views:26] Calling Home Page Function
+[2016-05-20 11:33:12,338] INFO views 4828 8588 [accounts.views:36] Calling Login Page Function
+[2016-05-20 11:33:21,283] INFO views 4828 6184 [accounts.views:41] Calling login Function
+[2016-05-20 11:33:26,075] INFO views 4828 1736 [accounts.views:41] Calling login Function
+[2016-05-20 11:33:29,325] INFO views 4828 4416 [accounts.views:41] Calling login Function
+[2016-05-20 11:33:34,257] INFO views 4828 6816 [accounts.views:41] Calling login Function
+[2016-05-20 11:33:39,965] INFO views 4828 5528 [accounts.views:41] Calling login Function
+[2016-05-20 11:33:43,651] INFO views 4828 5512 [accounts.views:41] Calling login Function
+[2016-05-20 11:33:50,501] INFO views 4828 9164 [accounts.views:41] Calling login Function
+[2016-05-20 11:35:52,627] INFO views 8436 6284 [accounts.views:78] Calling Logout Function
+[2016-05-20 11:35:57,509] INFO views 8436 2872 [accounts.views:41] Calling login Function
+[2016-05-20 11:36:05,924] INFO views 8436 7868 [accounts.views:41] Calling login Function
+[2016-05-20 11:36:09,578] INFO views 8436 8464 [accounts.views:78] Calling Logout Function
+[2016-05-20 11:36:15,393] INFO views 8436 5792 [accounts.views:41] Calling login Function
+[2016-05-20 11:36:24,929] INFO views 8436 9168 [accounts.views:41] Calling login Function
+[2016-05-20 11:36:30,792] INFO views 8436 6748 [accounts.views:78] Calling Logout Function
+[2016-05-20 11:36:34,795] INFO views 8436 1892 [accounts.views:41] Calling login Function
+[2016-05-20 11:36:36,816] INFO views 8436 7216 [accounts.views:78] Calling Logout Function
+[2016-05-20 11:36:55,236] INFO views 6932 7412 [accounts.views:26] Calling Home Page Function
+[2016-05-20 11:36:57,002] INFO views 6932 9008 [accounts.views:36] Calling Login Page Function
+[2016-05-20 11:37:07,186] INFO views 6932 5176 [accounts.views:42] Calling login Function
+[2016-05-20 11:38:34,691] INFO views 7240 8248 [accounts.views:26] Calling Home Page Function
+[2016-05-20 11:38:36,262] INFO views 7240 7760 [accounts.views:36] Calling Login Page Function
+[2016-05-20 11:38:44,307] INFO views 7240 6688 [accounts.views:42] Calling login Function
+[2016-05-20 11:52:18,359] INFO views 7240 8932 [accounts.views:160] Calling User View Function
+[2016-05-20 11:52:20,194] INFO views 7240 6416 [accounts.views:160] Calling User View Function
+[2016-05-20 11:52:22,067] INFO views 7240 2928 [accounts.views:79] Calling Logout Function
+[2016-05-20 11:52:37,129] INFO views 7240 5024 [accounts.views:42] Calling login Function
+[2016-05-20 11:55:33,400] INFO views 8800 6156 [accounts.views:26] Calling Home Page Function
+[2016-05-20 11:55:34,923] INFO views 8800 7688 [accounts.views:36] Calling Login Page Function
+[2016-05-20 11:55:45,428] INFO views 8800 8128 [accounts.views:42] Calling login Function
+[2016-05-20 11:56:45,729] INFO views 6516 6648 [accounts.views:42] Calling login Function
+[2016-05-20 11:57:03,389] INFO views 4944 1880 [accounts.views:26] Calling Home Page Function
+[2016-05-20 11:57:04,033] INFO views 4944 5620 [accounts.views:36] Calling Login Page Function
+[2016-05-20 11:57:08,954] INFO views 4944 1832 [accounts.views:42] Calling login Function
+[2016-05-20 11:57:26,625] INFO views 4944 3492 [accounts.views:42] Calling login Function
+[2016-05-20 11:57:34,243] INFO views 4944 6488 [accounts.views:42] Calling login Function
+[2016-05-20 11:57:45,074] INFO views 4944 7320 [accounts.views:42] Calling login Function
+[2016-05-20 12:01:18,651] INFO views 4944 6500 [accounts.views:42] Calling login Function
+[2016-05-20 12:01:27,195] INFO views 4944 7096 [accounts.views:42] Calling login Function
+[2016-05-20 12:01:37,218] INFO views 4944 6056 [accounts.views:26] Calling Home Page Function
+[2016-05-20 12:04:49,186] INFO views 4944 4424 [accounts.views:42] Calling login Function
+[2016-05-20 12:10:22,057] INFO views 6424 9128 [accounts.views:43] Calling login Function
+[2016-05-20 12:10:28,854] INFO views 6424 7112 [accounts.views:43] Calling login Function
+[2016-05-20 12:10:45,044] INFO views 6424 2052 [accounts.views:82] Calling Logout Function
+[2016-05-20 12:11:33,654] INFO views 6424 2092 [accounts.views:43] Calling login Function
+[2016-05-20 12:11:38,870] INFO views 6424 6072 [accounts.views:43] Calling login Function
+[2016-05-20 12:11:41,530] INFO views 6424 1808 [accounts.views:124] Calling List All User Function
+[2016-05-20 12:11:43,635] INFO views 6424 8128 [accounts.views:138] Calling Edit User Function
+[2016-05-20 12:11:47,477] INFO views 6424 9068 [accounts.views:32] Calling Admin Page Function
+[2016-05-20 12:11:49,829] INFO views 6424 6556 [accounts.views:124] Calling List All User Function
+[2016-05-20 12:11:52,414] INFO views 6424 5424 [accounts.views:154] Calling Delete User Function
+[2016-05-20 12:11:53,452] INFO views 6424 2848 [accounts.views:154] Calling Delete User Function
+[2016-05-20 12:11:54,381] INFO views 6424 1260 [accounts.views:154] Calling Delete User Function
+[2016-05-20 12:11:55,725] INFO views 6424 3236 [accounts.views:32] Calling Admin Page Function
+[2016-05-20 12:12:04,352] INFO views 6424 7456 [accounts.views:87] Calling Create User Function
+[2016-05-20 12:12:25,313] INFO views 6424 8404 [accounts.views:92] Calling Register User Function
+[2016-05-20 12:12:26,973] INFO views 6424 7668 [accounts.views:32] Calling Admin Page Function
+[2016-05-20 12:14:00,929] INFO views 6424 7584 [accounts.views:124] Calling List All User Function
+[2016-05-20 12:14:03,698] INFO views 6424 396 [accounts.views:32] Calling Admin Page Function
+[2016-05-20 12:14:07,379] INFO views 6424 7268 [accounts.views:124] Calling List All User Function
+[2016-05-20 12:14:09,640] INFO views 6424 7784 [accounts.views:32] Calling Admin Page Function
+[2016-05-20 12:14:11,231] INFO views 6424 8996 [accounts.views:131] Calling Edit User Function
+[2016-05-20 12:14:12,867] INFO views 6424 8332 [accounts.views:32] Calling Admin Page Function
+[2016-05-20 12:14:17,565] INFO views 6424 8200 [accounts.views:82] Calling Logout Function
+[2016-05-20 12:14:33,104] INFO views 6424 4844 [accounts.views:43] Calling login Function
+[2016-05-20 12:14:59,440] INFO views 7744 2348 [accounts.views:43] Calling login Function
+[2016-05-20 12:23:58,763] INFO views 1724 5816 [accounts.views:37] Calling Login Page Function
+[2016-05-20 12:24:12,429] INFO views 1724 6752 [accounts.views:43] Calling login Function
+[2016-05-20 12:24:13,789] INFO views 1724 8276 [accounts.views:43] Calling login Function
+[2016-05-20 12:24:42,583] INFO views 1724 2832 [accounts.views:86] Calling Logout Function
+[2016-05-20 12:25:58,594] INFO views 8232 5324 [accounts.views:43] Calling login Function
+[2016-05-20 12:26:53,709] INFO views 8232 6700 [accounts.views:43] Calling login Function
+[2016-05-20 12:26:56,528] INFO views 8232 7364 [accounts.views:86] Calling Logout Function
+[2016-05-20 12:27:14,478] INFO views 1240 2008 [accounts.views:87] Calling Logout Function
+[2016-05-20 12:27:21,692] INFO views 1240 5216 [accounts.views:42] Calling login Function
+[2016-05-20 12:28:14,396] INFO views 1240 8732 [accounts.views:87] Calling Logout Function
+[2016-05-20 12:28:21,887] INFO views 1240 3264 [accounts.views:42] Calling login Function
+[2016-05-20 12:29:17,928] INFO views 1240 1272 [accounts.views:42] Calling login Function
+[2016-05-20 12:29:50,656] INFO views 1240 7336 [accounts.views:42] Calling login Function
+[2016-05-20 12:29:51,666] INFO views 1240 6224 [accounts.views:42] Calling login Function
+[2016-05-20 12:30:06,693] INFO views 1240 6712 [accounts.views:42] Calling login Function
+[2016-05-20 12:30:31,634] INFO views 1240 8368 [accounts.views:42] Calling login Function
+[2016-05-20 12:30:41,974] INFO views 1240 7352 [accounts.views:168] Calling User View Function
+[2016-05-20 12:30:42,504] INFO views 1240 8304 [accounts.views:168] Calling User View Function
+[2016-05-20 12:30:42,713] INFO views 1240 7616 [accounts.views:168] Calling User View Function
+[2016-05-20 12:30:42,884] INFO views 1240 5420 [accounts.views:168] Calling User View Function
+[2016-05-20 12:30:44,039] INFO views 1240 9076 [accounts.views:87] Calling Logout Function
+[2016-05-20 12:30:49,224] INFO views 1240 6684 [accounts.views:42] Calling login Function
+[2016-05-20 12:31:12,604] INFO views 1240 3676 [accounts.views:42] Calling login Function
+[2016-05-20 12:31:26,908] INFO views 1240 8276 [accounts.views:87] Calling Logout Function
+[2016-05-20 12:31:34,270] INFO views 1240 8452 [accounts.views:42] Calling login Function
+[2016-05-23 10:36:04,582] INFO views 1780 5360 [accounts.views:27] Calling Home Page Function
+[2016-05-23 10:36:09,670] INFO views 1780 6452 [accounts.views:37] Calling Login Page Function
+[2016-05-23 10:36:16,229] INFO views 1780 6716 [accounts.views:42] Calling login Function
+[2016-05-23 10:36:49,025] INFO views 5340 5068 [accounts.views:42] Calling login Function
+[2016-05-23 10:37:21,015] INFO views 5340 1572 [accounts.views:42] Calling login Function
+[2016-05-23 10:37:26,308] INFO views 5340 6844 [accounts.views:42] Calling login Function
+[2016-05-23 10:37:28,916] INFO views 5340 7868 [accounts.views:42] Calling login Function
+[2016-05-23 10:39:01,934] INFO views 5340 5984 [accounts.views:42] Calling login Function
+[2016-05-23 10:39:09,126] INFO views 5340 3504 [accounts.views:42] Calling login Function
+[2016-05-23 10:39:14,468] INFO views 5340 8184 [accounts.views:42] Calling login Function
+[2016-05-23 10:39:31,602] INFO views 5340 592 [accounts.views:42] Calling login Function
+[2016-05-23 10:39:32,897] INFO views 5340 7280 [accounts.views:42] Calling login Function
+[2016-05-23 10:39:35,569] INFO views 5340 7644 [accounts.views:42] Calling login Function
+[2016-05-23 10:39:41,717] INFO views 5340 4316 [accounts.views:42] Calling login Function
+[2016-05-23 10:42:09,039] INFO views 5452 7408 [accounts.views:27] Calling Home Page Function
+[2016-05-23 10:42:10,065] INFO views 5452 4364 [accounts.views:37] Calling Login Page Function
+[2016-05-23 10:42:18,209] INFO views 5452 5832 [accounts.views:42] Calling login Function
+[2016-05-23 10:42:19,740] INFO views 5452 5580 [accounts.views:42] Calling login Function
+[2016-05-23 10:42:27,046] INFO views 6992 5884 [accounts.views:42] Calling login Function
+[2016-05-23 10:42:29,517] INFO views 6992 1648 [accounts.views:42] Calling login Function
+[2016-05-23 10:42:33,945] INFO views 6992 7660 [accounts.views:42] Calling login Function
+[2016-05-23 10:43:00,250] INFO views 6992 7300 [accounts.views:42] Calling login Function
+[2016-05-23 10:43:03,067] INFO views 6992 7520 [accounts.views:42] Calling login Function
+[2016-05-23 10:43:08,790] INFO views 6992 7236 [accounts.views:42] Calling login Function
+[2016-05-23 10:43:28,950] INFO views 6992 6976 [accounts.views:42] Calling login Function
+[2016-05-23 10:43:31,192] INFO views 6992 7128 [accounts.views:87] Calling Logout Function
+[2016-05-23 10:43:52,124] INFO views 7328 4416 [accounts.views:27] Calling Home Page Function
+[2016-05-23 10:43:54,186] INFO views 7328 6488 [accounts.views:37] Calling Login Page Function
+[2016-05-23 10:44:00,095] INFO views 7328 1068 [accounts.views:42] Calling login Function
+[2016-05-23 10:44:06,636] INFO views 7328 7740 [accounts.views:42] Calling login Function
+[2016-05-23 10:44:22,054] INFO views 7328 480 [accounts.views:42] Calling login Function
+[2016-05-23 10:44:46,920] INFO views 7700 8156 [accounts.views:42] Calling login Function
+[2016-05-23 10:44:48,816] INFO views 7700 6248 [accounts.views:87] Calling Logout Function
+[2016-05-23 10:44:49,767] INFO views 7700 4108 [accounts.views:27] Calling Home Page Function
+[2016-05-23 10:44:50,213] INFO views 7700 5588 [accounts.views:37] Calling Login Page Function
+[2016-05-23 10:44:56,494] INFO views 7700 4388 [accounts.views:42] Calling login Function
+[2016-05-23 10:45:01,229] INFO views 7700 8112 [accounts.views:42] Calling login Function
+[2016-05-23 10:45:04,497] INFO views 7700 7304 [accounts.views:37] Calling Login Page Function
+[2016-05-23 10:45:11,258] INFO views 7700 4520 [accounts.views:42] Calling login Function
+[2016-05-23 10:45:22,643] INFO views 7700 3584 [accounts.views:42] Calling login Function
+[2016-05-23 10:45:24,802] INFO views 7700 6592 [accounts.views:27] Calling Home Page Function
+[2016-05-23 10:45:26,618] INFO views 7700 7772 [accounts.views:37] Calling Login Page Function
+[2016-05-23 10:45:32,995] INFO views 7700 3916 [accounts.views:42] Calling login Function
+[2016-05-23 11:01:21,149] INFO views 2124 7328 [accounts.views:42] Calling login Function
+[2016-05-23 11:01:29,866] INFO views 2124 7796 [accounts.views:42] Calling login Function
+[2016-05-23 11:01:38,642] INFO views 2124 5696 [accounts.views:42] Calling login Function
+[2016-05-23 11:04:18,294] INFO views 5232 7448 [accounts.views:42] Calling login Function
+[2016-05-23 11:04:31,281] INFO views 5232 6648 [accounts.views:42] Calling login Function
+[2016-05-23 11:04:35,447] INFO views 5232 5556 [accounts.views:42] Calling login Function
+[2016-05-23 11:05:41,078] INFO views 5232 1648 [accounts.views:42] Calling login Function
+[2016-05-23 11:05:54,790] INFO views 5520 5328 [accounts.views:42] Calling login Function
+[2016-05-23 11:06:12,051] INFO views 5520 5124 [accounts.views:42] Calling login Function
+[2016-05-23 11:06:15,073] INFO views 5520 7236 [accounts.views:42] Calling login Function
+[2016-05-23 11:07:44,295] INFO views 7560 4108 [accounts.views:42] Calling login Function
+[2016-05-23 11:08:00,145] INFO views 7560 3952 [accounts.views:42] Calling login Function
+[2016-05-23 11:08:20,196] INFO views 7560 5260 [accounts.views:42] Calling login Function
+[2016-05-23 11:08:31,000] INFO views 7560 7956 [accounts.views:42] Calling login Function
+[2016-05-23 11:08:37,310] INFO views 7560 820 [accounts.views:42] Calling login Function
+[2016-05-23 11:12:26,036] INFO views 4108 836 [accounts.views:42] Calling login Function
+[2016-05-23 11:12:39,692] INFO views 4108 6000 [accounts.views:42] Calling login Function
+[2016-05-23 11:12:43,648] INFO views 4108 4916 [accounts.views:42] Calling login Function
+[2016-05-23 11:14:15,079] INFO views 7540 8016 [accounts.views:42] Calling login Function
+[2016-05-23 11:14:27,972] INFO views 7540 6380 [accounts.views:42] Calling login Function
+[2016-05-23 11:14:31,683] INFO views 7540 7560 [accounts.views:42] Calling login Function
+[2016-05-23 11:14:40,470] INFO views 7540 2724 [accounts.views:42] Calling login Function
+[2016-05-23 11:15:33,479] INFO views 7540 4108 [accounts.views:42] Calling login Function
+[2016-05-23 11:15:45,345] INFO views 7540 7736 [accounts.views:42] Calling login Function
+[2016-05-23 12:29:26,347] INFO views 7540 3804 [accounts.views:42] Calling login Function
+[2016-05-23 12:29:37,566] INFO views 7540 5616 [accounts.views:42] Calling login Function
+[2016-05-23 12:29:40,265] INFO views 7540 3120 [accounts.views:42] Calling login Function
+[2016-05-23 12:29:48,699] INFO views 7540 6916 [accounts.views:42] Calling login Function
+[2016-05-23 12:29:52,157] INFO views 7540 6752 [accounts.views:42] Calling login Function
+[2016-05-23 12:31:52,682] INFO views 7540 8072 [accounts.views:42] Calling login Function
+[2016-05-23 12:32:40,929] INFO views 7540 6344 [accounts.views:42] Calling login Function
+[2016-05-23 12:33:05,932] INFO views 7540 2676 [accounts.views:42] Calling login Function
+[2016-05-23 12:33:14,656] INFO views 7540 6456 [accounts.views:42] Calling login Function
+[2016-05-23 12:34:13,303] INFO views 7540 5484 [accounts.views:42] Calling login Function
+[2016-05-23 12:35:00,564] INFO views 8056 820 [accounts.views:42] Calling login Function
+[2016-05-23 12:35:03,193] INFO views 8056 2124 [accounts.views:42] Calling login Function
+[2016-05-23 12:35:25,472] INFO views 8056 6720 [accounts.views:42] Calling login Function
+[2016-05-23 12:35:26,610] INFO views 8056 5604 [accounts.views:42] Calling login Function
+[2016-05-23 12:35:41,209] INFO views 8056 948 [accounts.views:42] Calling login Function
+[2016-05-23 12:39:46,119] INFO views 8056 7144 [accounts.views:42] Calling login Function
+[2016-05-23 12:40:50,333] INFO views 8056 6000 [accounts.views:42] Calling login Function
+[2016-05-23 12:41:01,620] INFO views 8056 8172 [accounts.views:42] Calling login Function
+[2016-05-23 12:41:11,305] INFO views 8056 7852 [accounts.views:42] Calling login Function
+[2016-05-23 12:41:24,928] INFO views 8056 7596 [accounts.views:42] Calling login Function
+[2016-05-23 12:41:54,506] INFO views 8056 6420 [accounts.views:42] Calling login Function
+[2016-05-23 12:42:00,652] INFO views 8056 5832 [accounts.views:42] Calling login Function
+[2016-05-23 12:42:08,985] INFO views 8056 7740 [accounts.views:42] Calling login Function
+[2016-05-23 12:43:09,759] INFO views 8056 6720 [accounts.views:42] Calling login Function
+[2016-05-23 12:43:18,298] INFO views 8056 7352 [accounts.views:42] Calling login Function
+[2016-05-23 12:43:48,027] INFO views 8056 4248 [accounts.views:42] Calling login Function
+[2016-05-23 12:43:56,064] INFO views 8056 4876 [accounts.views:27] Calling Home Page Function
+[2016-05-23 12:43:58,202] INFO views 8056 5556 [accounts.views:37] Calling Login Page Function
+[2016-05-23 12:44:05,128] INFO views 8056 480 [accounts.views:42] Calling login Function
+[2016-05-23 12:48:00,857] INFO views 8056 6812 [accounts.views:42] Calling login Function
+[2016-05-24 10:31:40,947] INFO views 6836 544 [accounts.views:27] Calling Home Page Function
+[2016-05-24 10:31:48,922] INFO views 6836 9560 [accounts.views:37] Calling Login Page Function
+[2016-05-24 10:31:54,845] INFO views 6836 8884 [accounts.views:42] Calling login Function
+[2016-05-24 10:33:03,772] INFO views 6836 9752 [accounts.views:42] Calling login Function
+[2016-05-24 10:33:17,332] INFO views 6836 9548 [accounts.views:42] Calling login Function
+[2016-05-24 10:34:55,670] INFO views 5124 9648 [accounts.views:42] Calling login Function
+[2016-05-24 10:35:02,763] INFO views 5124 7024 [accounts.views:42] Calling login Function
+[2016-05-24 10:35:31,813] INFO views 5124 9484 [accounts.views:42] Calling login Function
+[2016-05-24 10:36:11,514] INFO views 5124 8712 [accounts.views:42] Calling login Function
+[2016-05-24 10:36:17,773] INFO views 5124 10152 [accounts.views:42] Calling login Function
+[2016-05-24 10:37:19,060] INFO views 5124 2128 [accounts.views:42] Calling login Function
+[2016-05-24 10:37:22,864] INFO views 5124 2604 [accounts.views:42] Calling login Function
+[2016-05-24 10:37:32,338] INFO views 5124 8752 [accounts.views:42] Calling login Function
+[2016-05-24 10:38:20,027] INFO views 4904 5224 [accounts.views:42] Calling login Function
+[2016-05-24 10:38:26,258] INFO views 4904 9308 [accounts.views:42] Calling login Function
+[2016-05-24 10:38:30,822] INFO views 4904 1584 [accounts.views:42] Calling login Function
+[2016-05-24 10:39:09,325] INFO views 9792 5472 [accounts.views:42] Calling login Function
+[2016-05-24 10:39:26,360] INFO views 9792 6616 [accounts.views:42] Calling login Function
+[2016-05-24 10:39:31,452] INFO views 9792 6436 [accounts.views:42] Calling login Function
+[2016-05-24 10:40:30,981] INFO views 7696 8944 [accounts.views:27] Calling Home Page Function
+[2016-05-24 10:40:31,624] INFO views 7696 7964 [accounts.views:37] Calling Login Page Function
+[2016-05-24 10:40:36,403] INFO views 7696 7980 [accounts.views:42] Calling login Function
+[2016-05-24 10:40:43,087] INFO views 7696 10164 [accounts.views:42] Calling login Function
+[2016-05-24 10:42:31,287] INFO views 7696 5576 [accounts.views:42] Calling login Function
+[2016-05-24 10:42:38,379] INFO views 7696 5604 [accounts.views:42] Calling login Function
+[2016-05-24 10:43:01,998] INFO views 8484 5820 [accounts.views:42] Calling login Function
+[2016-05-24 10:43:09,667] INFO views 8484 9108 [accounts.views:87] Calling Logout Function
+[2016-05-24 10:43:10,967] INFO views 8484 5056 [accounts.views:27] Calling Home Page Function
+[2016-05-24 10:43:11,604] INFO views 8484 7576 [accounts.views:37] Calling Login Page Function
+[2016-05-24 10:43:17,530] INFO views 8484 9000 [accounts.views:42] Calling login Function
+[2016-05-24 10:43:29,252] INFO views 8484 7156 [accounts.views:42] Calling login Function
+[2016-05-24 10:44:00,515] INFO views 10016 2532 [accounts.views:42] Calling login Function
+[2016-05-24 10:44:02,046] INFO views 10016 8072 [accounts.views:87] Calling Logout Function
+[2016-05-24 10:44:02,711] INFO views 10016 5824 [accounts.views:27] Calling Home Page Function
+[2016-05-24 10:44:03,179] INFO views 10016 5232 [accounts.views:37] Calling Login Page Function
+[2016-05-24 10:44:08,798] INFO views 10016 6112 [accounts.views:42] Calling login Function
+[2016-05-24 10:44:18,719] INFO views 10016 8000 [accounts.views:42] Calling login Function
+[2016-05-24 10:44:37,523] INFO views 10016 7224 [accounts.views:42] Calling login Function
+[2016-05-24 10:44:38,934] INFO views 10016 7312 [accounts.views:87] Calling Logout Function
+[2016-05-24 10:44:44,572] INFO views 10016 7056 [accounts.views:42] Calling login Function
+[2016-05-24 10:49:05,438] INFO views 7824 9412 [accounts.views:28] Calling Home Page Function
+[2016-05-24 10:49:07,047] INFO views 7824 7728 [accounts.views:38] Calling Login Page Function
+[2016-05-24 10:49:41,162] INFO views 9264 5712 [accounts.views:43] Calling login Function
+[2016-05-24 10:49:43,329] INFO views 9264 9988 [accounts.views:88] Calling Logout Function
+[2016-05-24 10:49:48,418] INFO views 9264 1604 [accounts.views:43] Calling login Function
+[2016-05-24 10:49:54,483] INFO views 9264 8380 [accounts.views:43] Calling login Function
+[2016-05-24 10:50:09,268] INFO views 9264 8072 [accounts.views:43] Calling login Function
+[2016-05-24 10:55:27,455] INFO views 2188 8752 [accounts.views:28] Calling Home Page Function
+[2016-05-24 10:55:28,319] INFO views 2188 7064 [accounts.views:38] Calling Login Page Function
+[2016-05-24 10:55:33,693] INFO views 2188 6904 [accounts.views:43] Calling login Function
+[2016-05-24 10:55:39,385] INFO views 2188 2124 [accounts.views:43] Calling login Function
+[2016-05-24 10:55:44,906] INFO views 2188 7228 [accounts.views:43] Calling login Function
+[2016-05-24 10:56:24,495] INFO views 5972 8464 [accounts.views:28] Calling Home Page Function
+[2016-05-24 10:56:26,532] INFO views 5972 7016 [accounts.views:38] Calling Login Page Function
+[2016-05-24 10:56:31,517] INFO views 5972 3692 [accounts.views:43] Calling login Function
+[2016-05-24 10:56:37,288] INFO views 5972 8960 [accounts.views:43] Calling login Function
+[2016-05-24 10:58:20,704] INFO views 5972 5720 [accounts.views:43] Calling login Function
+[2016-05-24 10:58:25,337] INFO views 5972 808 [accounts.views:43] Calling login Function
+[2016-05-24 10:59:22,881] INFO views 5972 9608 [accounts.views:28] Calling Home Page Function
+[2016-05-24 10:59:23,802] INFO views 5972 7240 [accounts.views:38] Calling Login Page Function
+[2016-05-24 10:59:28,757] INFO views 5972 724 [accounts.views:43] Calling login Function
+[2016-05-24 11:00:30,222] INFO views 10148 2492 [accounts.views:28] Calling Home Page Function
+[2016-05-24 11:00:31,613] INFO views 10148 6364 [accounts.views:38] Calling Login Page Function
+[2016-05-24 11:00:36,799] INFO views 10148 4748 [accounts.views:43] Calling login Function
+[2016-05-24 11:00:43,759] INFO views 10148 9332 [accounts.views:43] Calling login Function
+[2016-05-24 11:03:24,607] INFO views 5884 8088 [accounts.views:28] Calling Home Page Function
+[2016-05-24 11:03:25,104] INFO views 5884 4932 [accounts.views:38] Calling Login Page Function
+[2016-05-24 11:03:30,178] INFO views 5884 8896 [accounts.views:43] Calling login Function
+[2016-05-24 11:03:38,388] INFO views 5884 8836 [accounts.views:43] Calling login Function
+[2016-05-24 11:03:40,167] INFO views 5884 7492 [accounts.views:28] Calling Home Page Function
+[2016-05-24 11:03:41,423] INFO views 5884 2332 [accounts.views:38] Calling Login Page Function
+[2016-05-24 11:03:47,321] INFO views 5884 8868 [accounts.views:43] Calling login Function
+[2016-05-24 11:07:56,704] INFO views 9212 7888 [accounts.views:43] Calling login Function
+[2016-05-24 11:08:06,359] INFO views 9212 4828 [accounts.views:43] Calling login Function
+[2016-05-24 11:08:37,053] INFO views 7544 6432 [accounts.views:28] Calling Home Page Function
+[2016-05-24 11:08:38,334] INFO views 7544 7728 [accounts.views:38] Calling Login Page Function
+[2016-05-24 11:08:44,194] INFO views 7544 1196 [accounts.views:43] Calling login Function
+[2016-05-24 11:08:49,074] INFO views 7544 6344 [accounts.views:43] Calling login Function
+[2016-05-24 11:08:55,031] INFO views 7544 824 [accounts.views:43] Calling login Function
+[2016-05-24 11:09:30,178] INFO views 10236 8684 [accounts.views:28] Calling Home Page Function
+[2016-05-24 11:09:30,831] INFO views 10236 9868 [accounts.views:38] Calling Login Page Function
+[2016-05-24 11:09:36,402] INFO views 10236 5536 [accounts.views:43] Calling login Function
+[2016-05-24 11:09:42,745] INFO views 10236 6480 [accounts.views:43] Calling login Function
+[2016-05-24 11:10:28,205] INFO views 3476 7064 [accounts.views:28] Calling Home Page Function
+[2016-05-24 11:10:29,447] INFO views 3476 2740 [accounts.views:38] Calling Login Page Function
+[2016-05-24 11:10:34,038] INFO views 3476 4544 [accounts.views:43] Calling login Function
+[2016-05-24 11:10:39,407] INFO views 3476 10088 [accounts.views:43] Calling login Function
+[2016-05-24 11:22:19,175] INFO views 7472 8604 [accounts.views:28] Calling Home Page Function
+[2016-05-24 11:22:23,530] INFO views 7472 9444 [accounts.views:38] Calling Login Page Function
+[2016-05-24 11:22:33,633] INFO views 7472 6596 [accounts.views:43] Calling login Function
+[2016-05-24 11:23:14,213] INFO views 544 8160 [accounts.views:88] Calling Logout Function
+[2016-05-24 11:23:15,525] INFO views 544 2456 [accounts.views:28] Calling Home Page Function
+[2016-05-24 11:23:16,750] INFO views 544 5196 [accounts.views:38] Calling Login Page Function
+[2016-05-24 11:23:36,663] INFO views 544 9084 [accounts.views:43] Calling login Function
+[2016-05-24 11:25:43,720] INFO views 6832 8396 [accounts.views:88] Calling Logout Function
+[2016-05-24 11:25:44,592] INFO views 6832 5036 [accounts.views:28] Calling Home Page Function
+[2016-05-24 11:25:46,272] INFO views 6832 3776 [accounts.views:38] Calling Login Page Function
+[2016-05-24 11:25:52,008] INFO views 6832 8160 [accounts.views:43] Calling login Function
+[2016-05-24 11:28:21,966] INFO views 6832 3652 [accounts.views:43] Calling login Function
+[2016-05-24 11:29:07,808] INFO views 6832 5240 [accounts.views:43] Calling login Function
+[2016-05-24 11:30:03,677] INFO views 6832 9760 [accounts.views:88] Calling Logout Function
+[2016-05-24 11:30:04,594] INFO views 6832 5972 [accounts.views:28] Calling Home Page Function
+[2016-05-24 11:30:08,585] INFO views 6832 9964 [accounts.views:38] Calling Login Page Function
+[2016-05-24 11:30:14,667] INFO views 6832 6648 [accounts.views:43] Calling login Function
+[2016-05-24 11:32:09,930] INFO views 6832 7404 [accounts.views:43] Calling login Function
+[2016-05-24 11:38:04,563] INFO views 1156 6844 [accounts.views:43] Calling login Function
+[2016-05-24 11:48:53,900] INFO views 8472 5056 [accounts.views:43] Calling login Function
+[2016-05-24 11:51:37,993] INFO views 6276 8164 [accounts.views:43] Calling login Function
+[2016-05-24 11:52:54,372] INFO views 6276 3120 [accounts.views:43] Calling login Function
+[2016-05-24 11:57:01,120] INFO views 9812 9452 [accounts.views:43] Calling login Function
+[2016-05-24 11:57:56,315] INFO views 5732 6580 [accounts.views:43] Calling login Function
+[2016-05-24 11:57:58,110] INFO views 5732 7352 [accounts.views:43] Calling login Function
+[2016-05-24 12:45:36,251] INFO views 6176 8880 [accounts.views:43] Calling login Function
+[2016-05-24 12:48:24,683] INFO views 10012 8624 [accounts.views:43] Calling login Function
+[2016-05-24 12:49:52,111] INFO views 10012 2476 [accounts.views:43] Calling login Function
+[2016-05-24 12:50:24,209] INFO views 10012 7676 [accounts.views:43] Calling login Function
+[2016-05-24 12:50:40,636] INFO views 10012 2740 [accounts.views:43] Calling login Function
+[2016-05-24 12:50:45,031] INFO views 10012 8304 [accounts.views:43] Calling login Function
+[2016-05-24 12:51:30,134] INFO views 10012 5512 [accounts.views:43] Calling login Function
+[2016-05-24 12:51:45,662] INFO views 7496 8984 [accounts.views:43] Calling login Function
+[2016-05-24 12:52:02,208] INFO views 7496 3724 [accounts.views:43] Calling login Function
+[2016-05-24 12:52:39,832] INFO views 7496 4100 [accounts.views:43] Calling login Function
+[2016-05-24 12:53:17,224] INFO views 8660 9136 [accounts.views:43] Calling login Function
+[2016-05-24 12:54:14,313] INFO views 5044 6652 [accounts.views:43] Calling login Function
+[2016-05-24 12:55:35,167] INFO views 5044 6648 [accounts.views:43] Calling login Function
+[2016-05-24 12:56:51,519] INFO views 5044 1432 [accounts.views:43] Calling login Function
+[2016-05-24 12:58:35,211] INFO views 5044 9844 [accounts.views:43] Calling login Function
+[2016-05-24 12:58:52,694] INFO views 5044 8248 [accounts.views:43] Calling login Function
+[2016-05-24 12:59:39,814] INFO views 5044 9664 [accounts.views:43] Calling login Function
+[2016-05-24 13:00:26,121] INFO views 9768 4496 [accounts.views:43] Calling login Function
+[2016-05-24 13:01:34,056] INFO views 9768 8652 [accounts.views:43] Calling login Function
+[2016-05-24 13:01:37,717] INFO views 9768 5916 [accounts.views:43] Calling login Function
+[2016-05-24 13:02:18,970] INFO views 9768 6344 [accounts.views:43] Calling login Function
+[2016-05-24 13:02:22,656] INFO views 9768 8848 [accounts.views:43] Calling login Function
+[2016-05-24 13:03:03,676] INFO views 9768 6292 [accounts.views:43] Calling login Function
+[2016-05-24 13:03:06,995] INFO views 9768 9452 [accounts.views:43] Calling login Function
+[2016-05-24 13:03:32,791] INFO views 1648 8164 [accounts.views:43] Calling login Function
+[2016-05-24 13:03:45,534] INFO views 1648 9284 [accounts.views:28] Calling Home Page Function
+[2016-05-24 13:04:22,547] INFO views 4892 9472 [accounts.views:43] Calling login Function
+[2016-05-24 13:04:46,664] INFO views 4892 2288 [accounts.views:43] Calling login Function
+[2016-05-24 13:06:59,924] INFO views 9768 9912 [accounts.views:43] Calling login Function
+[2016-05-24 13:07:01,696] INFO views 9768 9108 [accounts.views:43] Calling login Function
+[2016-05-24 13:14:11,319] INFO views 5580 2028 [accounts.views:43] Calling login Function
+[2016-05-24 14:32:40,707] INFO views 9480 5544 [accounts.views:43] Calling login Function
+[2016-05-24 14:32:56,510] INFO views 9480 7232 [accounts.views:43] Calling login Function
+[2016-05-24 14:39:30,633] INFO views 6896 8768 [accounts.views:43] Calling login Function
+[2016-05-24 14:41:29,955] INFO views 6896 5936 [accounts.views:43] Calling login Function
+[2016-05-24 14:42:09,788] INFO views 5916 10220 [accounts.views:43] Calling login Function
+[2016-05-24 14:43:01,514] INFO views 5916 9860 [accounts.views:43] Calling login Function
+[2016-05-24 14:46:46,540] INFO views 7996 7580 [accounts.views:43] Calling login Function
+[2016-05-24 14:47:41,477] INFO views 7996 6228 [accounts.views:43] Calling login Function
+[2016-05-24 14:48:27,652] INFO views 8372 9752 [accounts.views:43] Calling login Function
+[2016-05-24 14:49:10,033] INFO views 3444 8752 [accounts.views:43] Calling login Function
+[2016-05-24 14:52:05,010] INFO views 4592 8992 [accounts.views:43] Calling login Function
+[2016-05-24 14:57:28,666] INFO views 7120 2724 [accounts.views:43] Calling login Function
+[2016-05-24 14:58:10,561] INFO views 7120 9392 [accounts.views:43] Calling login Function
+[2016-05-24 14:58:54,477] INFO views 5716 9860 [accounts.views:43] Calling login Function
+[2016-05-24 14:59:26,447] INFO views 8620 4444 [accounts.views:43] Calling login Function
+[2016-05-24 14:59:55,626] INFO views 5528 5068 [accounts.views:43] Calling login Function
+[2016-05-24 15:03:42,090] INFO views 5528 9772 [accounts.views:43] Calling login Function
+[2016-05-24 15:04:25,860] INFO views 5528 6812 [accounts.views:43] Calling login Function
+[2016-05-24 15:05:07,812] INFO views 7024 808 [accounts.views:43] Calling login Function
+[2016-05-24 15:08:40,966] INFO views 10200 9316 [accounts.views:43] Calling login Function
+[2016-05-24 15:18:20,343] INFO views 7568 9596 [accounts.views:44] Calling login Function
+[2016-05-24 15:20:05,596] INFO views 636 3660 [accounts.views:44] Calling login Function
+[2016-05-24 15:20:15,964] INFO views 636 7952 [accounts.views:29] Calling Home Page Function
+[2016-05-24 15:20:57,257] INFO views 7972 2128 [accounts.views:44] Calling login Function
+[2016-05-24 15:22:13,108] INFO views 7972 4868 [accounts.views:44] Calling login Function
+[2016-05-24 15:22:55,365] INFO views 7972 6740 [accounts.views:44] Calling login Function
+[2016-05-24 15:23:31,708] INFO views 7972 2160 [accounts.views:44] Calling login Function
+[2016-05-24 15:23:49,477] INFO views 7308 9772 [accounts.views:44] Calling login Function
+[2016-05-24 15:24:14,323] INFO views 7308 5128 [accounts.views:44] Calling login Function
+[2016-05-24 15:24:23,081] INFO views 7308 7188 [accounts.views:89] Calling Logout Function
+[2016-05-24 15:24:29,037] INFO views 7308 9136 [accounts.views:44] Calling login Function
+[2016-05-24 15:27:55,375] INFO views 4104 8760 [accounts.views:44] Calling login Function
+[2016-05-24 15:31:51,996] INFO views 8968 9056 [accounts.views:44] Calling login Function
+[2016-05-24 15:34:08,555] INFO views 9700 8848 [accounts.views:44] Calling login Function
+[2016-05-24 15:36:19,935] INFO views 9924 8088 [accounts.views:44] Calling login Function
+[2016-05-24 15:42:56,016] INFO views 8380 2600 [accounts.views:44] Calling login Function
+[2016-05-24 15:45:11,251] INFO views 6652 6384 [accounts.views:44] Calling login Function
+[2016-05-24 15:45:25,786] INFO views 6688 6704 [accounts.views:44] Calling login Function
+[2016-05-24 15:56:00,445] INFO views 5840 8052 [accounts.views:44] Calling login Function
+[2016-05-24 15:56:31,519] INFO views 7128 10184 [accounts.views:44] Calling login Function
+[2016-05-24 15:58:52,369] INFO views 808 9352 [accounts.views:44] Calling login Function
+[2016-05-24 16:00:26,202] INFO views 2160 1136 [accounts.views:44] Calling login Function
+[2016-05-24 16:01:10,856] INFO views 2160 8372 [accounts.views:44] Calling login Function
+[2016-05-24 17:03:57,573] INFO views 2160 6656 [accounts.views:44] Calling login Function
+[2016-05-24 17:06:23,773] INFO views 6436 9964 [accounts.views:44] Calling login Function
+[2016-05-24 17:07:13,089] INFO views 6436 2780 [accounts.views:44] Calling login Function
+[2016-05-24 17:07:54,476] INFO views 6476 7992 [accounts.views:44] Calling login Function
+[2016-05-24 17:12:45,476] INFO views 8448 1156 [accounts.views:44] Calling login Function
+[2016-05-24 17:12:58,491] INFO views 8448 6260 [accounts.views:44] Calling login Function
+[2016-05-24 17:14:09,394] INFO views 8448 9116 [accounts.views:44] Calling login Function
+[2016-05-24 17:15:27,437] INFO views 8448 9524 [accounts.views:44] Calling login Function
+[2016-05-24 17:16:22,322] INFO views 9232 7612 [accounts.views:44] Calling login Function
+[2016-05-24 17:16:53,476] INFO views 8592 5672 [accounts.views:44] Calling login Function
+[2016-05-24 17:18:04,377] INFO views 8592 5272 [accounts.views:44] Calling login Function

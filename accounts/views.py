@@ -9,8 +9,12 @@ import paramiko
 import requests
 from django.contrib import messages
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_protect, csrf_exempt
+from django.contrib.auth.decorators import login_required
+from django.core import serializers
 
 from .forms import LoginForm, RegistrationForm
 from .models import UserProfile
@@ -42,26 +46,34 @@ def login(request):
         form = LoginForm(request.POST)
         if form.is_valid():
             try:
+                # import pdb;
+                # pdb.set_trace();
                 username = request.POST.get('username')
                 password = request.POST.get('password')
-                auth_user = User.objects.get(username=username)
-                auth_user.password = password
-                if auth_user is not None:
-                    if auth_user.username == 'admin' and auth_user.password == password:
+                if username == 'admin':
+                    auth_user = authenticate(username=username, password=password)
+                    # auth_user = User.objects.get(username=username, password=password)
+                    # auth_user.password = password
+                    if auth_user is not None:
                         if auth_user.is_active:
                             return render(request, 'admin.html', {'user': auth_user.username})
                         else:
                             error = 'Invalid User'
-                            return render(request, 'admin.html', {'error': error})
+                            return render(request, 'login.html', {'error': error})
                     else:
+                        error = 'Please enter username and password to login'
+                        return render(request, 'login.html', {'error': error, 'form': form})
+                else:
+                    auth_user = User.objects.get(username=username, password=password)
+                    if auth_user is not None:
                         if auth_user.is_active:
                             return render(request, 'user.html', {'user': auth_user.username})
                         else:
                             error = 'Invalid User'
-                            return render(request, 'user.html', {'error': error})
-                else:
-                    error = 'Please enter username and password to login'
-                    return render(request, 'login.html', {'error': error, 'form': form})
+                            return render(request, 'login.html', {'error': error})
+                    else:
+                        error = 'Please enter username and password to login'
+                        return render(request, 'login.html', {'error': error, 'form': form})
             except:
                 error = 'Invalid User Please Enter Valid User Name and Password'
                 return render(request, 'login.html', {'error': error, 'form': form})
@@ -70,7 +82,7 @@ def login(request):
             return render(request, 'login.html', {'error': error})
     else:
         form = LoginForm()
-        return render(request, 'login.html', {'form': form})
+        return render(request, 'admin.html', {'form': form})
 
 
 def logout(request):
@@ -287,14 +299,14 @@ def auth_git(request):
 
     username = 'nvkgrandhi'
     password = 'KamalaN_#104'
-    response = requests.get('https://api.github.com', auth=(username, password))
+    # response = requests.get('https://api.github.com', auth=(username, password))
 
-    rep = requests.get('https://api.github.com')
-    rep1 = requests.get('https://api.github.com', auth=(username, password))
+    # rep = requests.get('https://api.github.com')
+    # rep1 = requests.get('https://api.github.com', auth=(username, password))
     # json_data = json.loads(str(rep))
 
 
-    req = requests.get('https://api.github.com/users/nvkgrandhi')
+    # req = requests.get('https://api.github.com/users/nvkgrandhi')
     # content = req.text
     # jsonList = []
     # jsonList.append(req.json())
@@ -312,17 +324,14 @@ def auth_git(request):
     # parsedData.append(userData)
     # return render(request, 'profile.html', {'data': parsedData})
 
-
-
-
-
     # return HttpResponse(response.headers['content-type'])
     # return HttpResponse(json_data)
     # return HttpResponse(rep)
     # return HttpResponse(rep1)
     # return HttpResponse(content)
     # return HttpResponse(parsedData)
-    return HttpResponse(req)
+    # return HttpResponse(req)
+    return HttpResponse('hai')
 
 
 # def profile(request):
@@ -377,7 +386,6 @@ def reposit(request):
     username = 'nvkgrandhi'
     password = 'KamalaN_#104'
 
-
     req = requests.get('https://api.github.com/users/nvkgrandhi/repos')
     req = req.json()
     parsedData = []
@@ -391,19 +399,11 @@ def reposit(request):
     for rb in rep_branch:
         rbdata.append(rb['name'])
 
-    # branch_commits = requests.get('https://api.github.com/repos/nvkgrandhi/devaps_ssp/nvk_devel/commits')
-    # branch_commits = branch_commits.json()
-    # bcommit = []
-    # for bc in branch_commits:
-    #     bcommit.append(bc[''])
 
 
-    # return render(request, 'repositorys.html', {'data': parsedData, 'rbdata': rbdata, 'commit': bcommit})
-    # return HttpResponse(req)
-    # return HttpResponse(rbdata)
-
-    # GET / repos /:owner /:repo / stats / contributors
-    contributors_list = requests.get('https://api.github.com/repos/nvkgrandhi/devaps_ssp/commits?sha=6e7728c40da7334e19490ad4535288199d9e8647')
+    contributors_list = requests.get(
+        'https://api.github.com/repos/nvkgrandhi/devaps_ssp/commits?sha=6e7728c40da7334e19490ad4535288199d9e8647'
+    )
     # contributors_list = requests.get('https://api.github.com/repos/nvkgrandhi/devaps_ssp/branches')
     contributors_list = contributors_list.json()
     crdata = []
@@ -412,9 +412,79 @@ def reposit(request):
 
     total_commits = len(crdata)
 
-    # return HttpResponse(contributors_list)
+
     return render(
         request,
         'repositorys.html',
         {'data': parsedData, 'rbdata': rbdata, 'commits': crdata, 'total_comits': total_commits}
     )
+    # return HttpResponse(contributors_list)
+
+    # commits = requests.get('https://api.github.com/repos/nvkgrandhi/devaps_ssp/nvk_devel/commits')
+    # return HttpResponse(commits)
+    # return render(request, 'repositorys.html', {'data': parsedData})
+
+
+@csrf_exempt
+def rep_branch(request, repo_name):
+    import pdb; pdb.set_trace();
+    if request.method == 'POST':
+        rep_branch = requests.get('https://api.github.com/repos/nvkgrandhi/'+ repo_name +'/branches')
+        rep_branch = rep_branch.json()
+        rbdata = []
+        for rb in rep_branch:
+            rbdata.append(rb['name'])
+    #
+    # # req = requests.get('https://api.github.com/users/nvkgrandhi/repos')
+    # # req = req.json()
+    # # parsedData = []
+    # # for data in req:
+    # #     # userData['name'] = data['name']
+    # #     parsedData.append(data['name'])
+    #
+    # return render(request, 'repositorys.html', {'rbdata': rbdata})
+    # return render(request, 'repositorys.html', {'data': data})
+    return HttpResponse(rbdata)
+
+# @csrf_exempt
+def git_authenticate(request):
+
+
+    if request.method == 'POST':
+        username = request.POST['name']
+        password = request.POST['pwd']
+        # auth_user = User.objects.get(username=username)
+        # password = auth_user.password
+        res = requests.get('https://api.github.com', auth=(username, password))
+        res_code = res.status_code
+
+        req = requests.get('https://api.github.com/users/'+ username +'/repos')
+        req = req.json()
+        parsedData = []
+        for data in req:
+            # userData['name'] = data['name']
+            parsedData.append(data["name"])
+
+        # import pdb;
+        # pdb.set_trace();
+        #
+        # for pd in parsedData:
+        #     print (pd)
+
+
+        # pdata = []
+        import pdb; pdb.set_trace();
+        p_data = {"data": parsedData}
+        jsonarray = json.dumps(p_data)
+
+        # pdata.append(p_data)
+
+        # print(r.status_code)
+        # print(r.headers['content-type'])
+        # parsedData = serializers.serialize('json', parsedData)
+
+        return HttpResponse(jsonarray, content_type="application/json")
+
+    else:
+        error_message = 'Not able to redirect post data'
+        return HttpResponse(error_message)
