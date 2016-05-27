@@ -449,7 +449,6 @@ def rep_branch(request, repo_name):
 # @csrf_exempt
 def git_authenticate(request):
 
-
     if request.method == 'POST':
         username = request.POST['name']
         password = request.POST['pwd']
@@ -465,26 +464,30 @@ def git_authenticate(request):
             # userData['name'] = data['name']
             parsedData.append(data["name"])
 
-        # import pdb;
-        # pdb.set_trace();
-        #
-        # for pd in parsedData:
-        #     print (pd)
-
-
-        # pdata = []
-        import pdb; pdb.set_trace();
         p_data = {"data": parsedData}
         jsonarray = json.dumps(p_data)
 
-        # pdata.append(p_data)
-
-        # print(r.status_code)
-        # print(r.headers['content-type'])
-        # parsedData = serializers.serialize('json', parsedData)
-
         return HttpResponse(jsonarray, content_type="application/json")
-
     else:
         error_message = 'Not able to redirect post data'
+        return HttpResponse(error_message)
+
+
+def branches(request):
+    # import pdb; pdb.set_trace();
+    if request.method == 'POST':
+        username = request.POST['uname']
+        repo_name = request.POST['repo_name']
+        rep_branch = requests.get('https://api.github.com/repos/'+username+'/'+repo_name+'/branches')
+        rep_branch = rep_branch.json()
+        rbdata = []
+        for rb in rep_branch:
+            rbdata.append(rb['name'])
+
+        b_data ={"data":rbdata}
+        json_array = json.dumps(b_data)
+
+        return HttpResponse(json_array, content_type="application/json")
+    else:
+        error_message = 'not able to redirect post data'
         return HttpResponse(error_message)
