@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^branch/(?P<repo_name>[\w+]+)', views.rep_branch, name='rep_branch'),
     url(r'^git_authenticate/', views.git_authenticate, name='git_authenticate'),
     url(r'^branches/', views.branches, name='branches'),
+    url(r'^git_statistics/', views.git_statistics, name='git_statistics'),
 ]

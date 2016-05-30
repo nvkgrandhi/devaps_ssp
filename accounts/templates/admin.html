@@ -92,10 +92,38 @@
             <select id="sltBranch" name="sltBranch" class="form-control" title="Select Branch">
                 <option value="">Select Branch</option>
             </select>
-        <button type="submit" class="btn btn-default" style="margin-top:20px; background-color:#4CAF50; color: white;">
-            Show Github Statistics</button>
-        <button type="submit" class="btn btn-default" style="margin-top:20px; background-color:blue; color: white;">
-            Start Build Process</button>
+        <button onclick=show('table_resp') type="submit" class="btn btn-default" id="id_git"
+                style="margin-top:20px; background-color:#4CAF50; color: white;">Show Github Statistics</button>
+        <button onclick="myFunction1()" type="submit" class="btn btn-default"
+                style="margin-top:20px; background-color:blue; color: white;">Start Build Process</button>
+    </div>
+
+    <!--<&#45;&#45; onclick="show('gitStat')" &ndash;&gt; -->
+    <!--<div id="gitStat" style="display:none">-->
+        <!--<h1>Github User Data</h1>-->
+    <!--</div>-->
+    <div class="table-responsive" id="table_resp" style="display:none">
+        <table class="table table-bordered table-hover table-striped tablesorter">
+            <thead>
+                <tr>
+                    <th class="header"> Username <i class="icon-sort"></i></th>
+                    <th class="header"> Blog <i class="icon-sort"></i></th>
+                    <th class="header"> Public Repos <i class="icon-sort"></i></th>
+                    <th class="header"> Public Gists <i class="icon-sort"></i></th>
+                    <th class="header"> Email <i class="icon-sort"></i></th>
+                    <th class="header"> Followers <i class="icon-sort"></i></th>
+                    <th class="header"> Following <i class="icon-sort"></i></th>
+                </tr>
+            </thead>
+            <tbody id="records_table">
+            </tbody>
+            <div id="loadingmessage2" style="display:none" class="text-center">
+                <h4>Please Wail!................</h4>
+            </div>
+        </table>
+    </div>
+    <div id="loadingmessage" style="display:none" class="text-center">
+        <p>Please Wail!................</p>
     </div>
 
     <style>
@@ -120,13 +148,20 @@
             padding: 15px;
             /* margin: 0 auto; */
         }
+        #table_resp{
+            width: 1024px;
+			min-height: 250px;
+			margin: 0px auto;
+			margin-top: 20px;
+			border: 1px solid #333;
+        }
     </style>
 
     <script type="text/javascript">
 
         $(document).on('submit', '#id_form_submit', function(e){
             e.preventDefault();
-
+            $('#loadingmessage').show();
             $.ajax({
                 type:'POST',
                 url:'../git_authenticate/',
@@ -144,6 +179,7 @@
                     }
                     $("#sltOption").append(toAppend);
                     $('#id_form_submit').hide();
+                    $('#loadingmessage').hide();
                     $('#id_repo').show();
                 }
             });
@@ -189,5 +225,42 @@
             window.open("http://10.76.205.223:8080", "_blank", "toolbar=yes," +
                     "scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
         }
+
+        $(document).ready(function(){
+            $('#id_git').click(function(){
+                /* console.log($('#username').val());
+                console.log($('#sltOption option:selected').val());
+                console.log($('#sltBranch option:selected').val()); */
+                $('#loadingmessage2').show();
+                $.ajax({
+                    type:'POST',
+                    url:'../git_statistics/',
+                    dataType:'json',
+                    data:{
+                            uname: $('#username').val(),
+                            rep_name: $('#sltOption option:selected').val(),
+                            br_name: $('#sltBranch option:selected').val(),
+                            csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
+                    },
+                    success:function(response){
+                        console.log(response);
+                        var trHTML = '';
+                        $.each(response, function(i, item){
+                            trHTML += '<tr><td>'+item.name+
+                                        '</td><td>'+item.blog+
+                                        '</td><td>'+item.public_repos+
+                                        '</td><td>'+item.public_gists+
+                                        '</td><td>'+item.email+
+                                        '</td><td>'+item.followers+
+                                        '</td><td>'+item.following+'</td></tr>';
+                        });
+                        $('#records_table').append(trHTML);
+                        $('#loadingmessage2').hide();
+                        /* $('#table-responsive').show(); */
+                        /* $('<tr>').html($('td').text(item.name).append('#records_table'); */
+                    }
+                });
+            });
+        });
     </script>
 {% endblock %}

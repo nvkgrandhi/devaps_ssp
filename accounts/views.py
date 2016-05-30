@@ -491,3 +491,33 @@ def branches(request):
     else:
         error_message = 'not able to redirect post data'
         return HttpResponse(error_message)
+
+
+def git_statistics(request):
+    import pdb; pdb.set_trace();
+    parsedData = []
+    if request.method == 'POST':
+        username = request.POST['uname']
+        repository = request.POST['rep_name']
+        branch = request.POST['br_name']
+        # req = requests.get('https://api.github.com/users/'+username+'/')
+        req = requests.get('https://api.github.com/users/'+ username)
+        jsonList = []
+        jsonList.append(req.json())
+        userData = {}
+        for data in jsonList:
+            userData['name'] = data['name']
+            userData['blog'] = data['blog']
+            userData['email'] = data['email']
+            userData['public_gists'] = data['public_gists']
+            userData['public_repos'] = data['public_repos']
+            userData['avatar_url'] = data['avatar_url']
+            userData['followers'] = data['followers']
+            userData['following'] = data['following']
+
+        parsedData.append(userData)
+        json_data = json.dumps(parsedData)
+        return HttpResponse(json_data, content_type="application/json")
+    else:
+        error_message = 'not able to redirect post data'
+        return HttpResponse(error_message)
