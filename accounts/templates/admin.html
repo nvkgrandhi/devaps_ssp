@@ -73,7 +73,7 @@
                     </div>
                     <div class="form-group">
                         <label class="sr-only" for="password">Password</label>
-                        <input type="password" name="password" value="KamalaN_#104" placeholder="Password..." class="form-password form-control" id="password">
+                        <input type="password" name="password" value="Enter Password" placeholder="Password..." class="form-password form-control" id="password">
                     </div>
                     <button type="submit" class="btn btn-default">Authenticate!</button>
                 </form>
@@ -254,7 +254,7 @@
                                         '</td><td>'+item.followers+
                                         '</td><td>'+item.following+'</td></tr>';
                         });
-                        $('#records_table').append(trHTML);
+                        $('#records_table').html(trHTML);
                         $('#loadingmessage2').hide();
                         /* $('#table-responsive').show(); */
                         /* $('<tr>').html($('td').text(item.name).append('#records_table'); */

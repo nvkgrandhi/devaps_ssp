@@ -298,7 +298,7 @@ def auth_git(request):
     #     # print(r.headers['content-type'])
 
     username = 'nvkgrandhi'
-    password = 'KamalaN_#104'
+    password = 'Enter Password'
     # response = requests.get('https://api.github.com', auth=(username, password))
 
     # rep = requests.get('https://api.github.com')
@@ -359,7 +359,7 @@ def profile(request):
     logger.info("Calling auth_git function to authenticate github account")
     parsedData = []
     username = 'nvkgrandhi'
-    password = 'KamalaN_#104'
+    password = 'Enter Password'
 
     req = requests.get('https://api.github.com/users/nvkgrandhi')
     jsonList = []
@@ -384,7 +384,7 @@ def reposit(request):
     logger.info("Calling auth_git function to authenticate github account")
 
     username = 'nvkgrandhi'
-    password = 'KamalaN_#104'
+    password = 'Enter Password'
 
     req = requests.get('https://api.github.com/users/nvkgrandhi/repos')
     req = req.json()
@@ -444,7 +444,7 @@ def rep_branch(request, repo_name):
     #
     # return render(request, 'repositorys.html', {'rbdata': rbdata})
     # return render(request, 'repositorys.html', {'data': data})
-    return HttpResponse(rbdata)
+        return HttpResponse(rbdata)
 
 # @csrf_exempt
 def git_authenticate(request):
@@ -494,13 +494,12 @@ def branches(request):
 
 
 def git_statistics(request):
-    import pdb; pdb.set_trace();
     parsedData = []
     if request.method == 'POST':
         username = request.POST['uname']
         repository = request.POST['rep_name']
         branch = request.POST['br_name']
-        # req = requests.get('https://api.github.com/users/'+username+'/')
+        jsonList = []
         req = requests.get('https://api.github.com/users/'+ username)
         jsonList = []
         jsonList.append(req.json())
@@ -514,6 +513,27 @@ def git_statistics(request):
             userData['avatar_url'] = data['avatar_url']
             userData['followers'] = data['followers']
             userData['following'] = data['following']
+
+        # import pdb; pdb.set_trace();
+        # # req = requests.get('https://api.github.com/commits/list/'+repository+'/'+branch)
+        # # req = requests.get('https://api.github.com/repos/' + username + '/' + repository + '/branches')
+        # # req = requests.get('https://api.github.com/repos/' + username + '/' + repository + '/stats/contributors')
+        # req = requests.get('https://api.github.com/repos/' + username + '/' + repository + '/commits')
+        # req_branch = req.json()
+        #
+        # p_data = []
+        # br_data = {}
+        # for br in req_branch:
+        #     br_data['branch'] = br['name']
+        #     br_data['sha'] = br['commit']['sha']
+        #     p_data.append(br_data)
+
+        # import pdb; pdb.set_trace();
+        # # req = requests.get('https://api.github.com/repos/' + username + '/' + repository + '/stats/contributors')
+        # req = requests.get('https://api.github.com/repos/' + username + '/' + repository + '/contributors')
+        # req = req.json()
+
+
 
         parsedData.append(userData)
         json_data = json.dumps(parsedData)
